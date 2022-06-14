@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet'); /*Volkov*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Volkhov&display=swap'); /*Poppins*/
+
+/* titulos: fonte Volkov - tamanho 40 */
+/* subtitulos: fonte Poppins - tamanho 25*/
+
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Volkhov', serif;
+*/
+
+/* color: #404040; */
+/* color: #BF7960 */
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+  /* border: 1px solid black */
+}
+
+.navbar {
+  background-color: #FAFAFA;
+  padding-top: 20px;
+}
+
+.nav a {
+  color: #404040;
+}
+
+.logo-nav a {
+  font-weight: bold;
+  font-family: 'Volkhov', serif;
+  font-size: 20px;
+}
+
+.botao {
+  background-color: #BF7960 !important;
+}
+
+.destaque {
+  background-color: #ECECEC;
+  height: 997px;
+}
+
+
+
+
+
+
+
+
+
