@@ -30,25 +30,7 @@ public class ClientService {
     }
 
     public Client update(Long id, Client client){
-        Client cliente = clientRepository.findById(id).get();
-        cliente.setId_cliente(id);
-        if(client.getNome()!=null && client.getCidade()!=null && client.getEmail()!=null && client.getTelefone() != null){
-            cliente.setNome(client.getNome());
-            cliente.setCidade(client.getCidade());
-            cliente.setEmail(client.getEmail());
-            cliente.setTelefone(client.getTelefone());
-        } else {
-            if(client.getNome()!=null){
-                cliente.setNome(client.getNome());
-            }else if(client.getCidade()!=null){
-                cliente.setCidade(client.getCidade());
-            } else if(client.getEmail()!=null){
-                cliente.setEmail(client.getEmail());
-            }else {
-                cliente.setTelefone(client.getTelefone());
-            }
-        }
-
-        return clientRepository.save(cliente);
+        client.setId_cliente(id);
+        return clientRepository.save(client);
     }
 }
