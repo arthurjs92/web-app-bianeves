@@ -1,45 +1,148 @@
 @import url('https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet'); /*Volkov*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Volkhov&display=swap'); /*Poppins*/
 
-/* titulos: fonte Volkov - tamanho 40 */
-/* subtitulos: fonte Poppins - tamanho 25*/
-
-/*
-font-family: 'Poppins', sans-serif;
-font-family: 'Volkhov', serif;
-*/
-
+/* titulos: font-family: 'Volkhov', serif; */
+/* subtitulos: font-family: 'Poppins', sans-serif; */
 /* color: #404040; */
 /* color: #BF7960 */
+/* color: #FFE7DB */
+
+
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0 auto;
-  /* border: 1px solid black */
+  color: #404040;
+  /* border: 1px solid black; */
 }
 
+.titulo {
+  font-family: 'Volkhov', serif;
+  font-weight: bold;
+}
+.titulo-destaque {
+  font-family: 'Volkhov', serif;
+  font-weight: bold;
+  color: #BF7960;
+}
+.frase-destaque {
+  color: #BF7960;
+}
+
+
+/*Formatacao navbar*/
 .navbar {
   background-color: #FAFAFA;
-  padding-top: 20px;
 }
 
 .nav a {
   color: #404040;
+  /*ajustar aqui a formatacao da cor azul*/
 }
 
 .logo-nav a {
   font-weight: bold;
   font-family: 'Volkhov', serif;
-  font-size: 20px;
 }
 
 .botao {
   background-color: #BF7960 !important;
 }
 
-.destaque {
-  background-color: #ECECEC;
-  height: 997px;
+
+/*Formatacao destaque header*/
+.sessao-destaque {
+  background-color: #F2F2F0 ;
+  text-align: center;
+  height: 600px;
 }
+
+.subtitulo {
+  background-color: white;
+  box-shadow: 8px 5px 5px #E5E5E5;
+  font-weight:bold;
+  padding: 12px;
+  border-radius: 14px;
+  width: 50%;
+}
+
+.box-logo img {
+  width: 60%;
+}
+
+.box-imagem-marcenaria img {
+  width: 80%;
+  border-radius: 0px 100px 0px 100px;
+}
+
+
+/*Formatacao main seção Transver*/
+.sessao-transver {
+  padding: 50px 0px 50px 0px;
+  height: 700px;
+}
+
+.sessao-transver h2{
+  margin-right: 50px;
+}
+
+.sessao-transver p{
+  padding: 30px 0px 30px 0px;
+  margin-right: 80px;
+}
+
+.imagem-principal-produtos img {
+  width: 80%;
+  border-radius: 20px;
+}
+
+.box-imagem-produto {
+  padding: 20px 0px 20px 0px;
+}
+
+.box-video-producao {
+  padding: 20px 0px 50px 0px;
+}
+
+
+/*Formatacao main seção Sobre a Bia*/
+.sessao-sobre {
+  padding: 50px 0px 50px 0px;
+  background-color: #FFE7DB;
+  text-align: center;
+  height: 600px;
+}
+
+.imagem-bia img {
+  width: 80%;
+  border-radius: 10px;
+
+}
+
+.box-frase {
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.box-container {
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
