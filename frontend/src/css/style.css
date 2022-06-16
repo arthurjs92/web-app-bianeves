@@ -29,7 +29,7 @@
 }
 
 
-/*Formatacao navbar*/
+/*Formatacao header - navbar*/
 .navbar {
   background-color: #FAFAFA;
 }
@@ -49,7 +49,7 @@
 }
 
 
-/*Formatacao destaque header*/
+/*Formatacao header - destaque */
 .sessao-destaque {
   background-color: #F2F2F0 ;
   text-align: center;
@@ -75,7 +75,7 @@
 }
 
 
-/*Formatacao main seção Transver*/
+/*Formatacao main - seção Transver*/
 .sessao-transver {
   padding: 50px 0px 50px 0px;
   height: 700px;
@@ -87,7 +87,7 @@
 
 .sessao-transver p{
   padding: 30px 0px 30px 0px;
-  margin-right: 80px;
+  margin: 0px 80px 0px 0px;
 }
 
 .imagem-principal-produtos img {
@@ -104,12 +104,20 @@
 }
 
 
-/*Formatacao main seção Sobre a Bia*/
+/*Formatacao main - seção Sobre a Bia*/
 .sessao-sobre {
   padding: 50px 0px 50px 0px;
   background-color: #FFE7DB;
   text-align: center;
   height: 600px;
+}
+
+.sessao-sobre h2 {
+  margin-left: 80px;
+}
+
+.titulo-sobre-bia {
+  text-align: left;
 }
 
 .imagem-bia img {
@@ -118,26 +126,78 @@
 
 }
 
-.box-frase {
+.box-frase p {
   background-color: white;
   padding: 5px;
+  margin: 0px;
   border-radius: 10px;
   width: 100%;
+}
+
+.box-frase {
+  align-items: center;
 }
 
 .box-container {
   padding: 10px;
 }
 
+.box-arvore  {
+  margin: 0px;
+  text-align: left;
+}
 
 
+/*Formatacao - THANK YOU PAGE*/
+.thankyou-page{
+  background-color: #FFE7DB;
+  text-align: center;
+  height: 100vh;
+  min-height: 100%;
+  margin: auto;
+}
+
+.box-logo-tnk{
+  width: 30%;
+}
+.box-thankyou {
+  padding: 30px 0px 30px 0px;
+}
+.box-thankyou h4 {
+  padding: 10px;
+}
+
+.box-redessociais {
+  background-color: white;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 14px;
+}
+.box-redessociais p {
+  padding: 10px;
+}
+.box-redessociais a {
+  text-decoration: none;
+}
 
 
+/*Formatacao - TELA LOGIN (Acesso Bia)*/
+.form-button {
+  background-color: #BF7960 !important;
+  color: #fff;
+  text-align: center;
+}
+
+.profile-image-pic{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
 
 
+/*Formatacao - TELA HOME (Acesso Bia)*/
 
-
-
+/*Formatacao - TELA UPDATE (Acesso Bia)*/
 
 
 

@@ -19,6 +19,7 @@ function Transver() {
           para criar produtos que durarão<spam className="frase-destaque"> por toda a vida.</spam></p>
         </div>
         <div className="col-6 imagem-principal-produtos">
+          {/* <iframe scr="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen title="video"/> */}
           <img src={ImagemProdutos}/>
         </div>
       </div>
