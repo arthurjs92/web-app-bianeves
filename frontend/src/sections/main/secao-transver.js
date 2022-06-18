@@ -6,7 +6,7 @@ function Transver() {
     <div className="container sessao-transver ">
       <div className="row box-imagem-produto">
         <div className="col-6 imagem-principal-produtos">
-          <img src={ImagemProdutos}/>
+          <img src={ImagemProdutos} className="img-responsive img-rounded"/>
         </div>
         <div className="col-6">
           <h2 className="titulo">O transver através das <spam className="titulo-destaque">transformações da natureza</spam></h2>
@@ -20,7 +20,7 @@ function Transver() {
         </div>
         <div className="col-6 imagem-principal-produtos">
           {/* <iframe scr="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen title="video"/> */}
-          <img src={ImagemProdutos}/>
+          <img src={ImagemProdutos} className="img-responsive img-rounded"/>
         </div>
       </div>
     </div>

@@ -16,13 +16,13 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @RestController
-@RequestMapping("/administracao/cliente")
+@RequestMapping("/administracao/login")
 public class ClientController {
 
     @Autowired
     ClientService clientService;
 
-    @GetMapping("/{nome}")
+    @GetMapping("/cliente/{nome}")
     public ResponseEntity<Client> getClienteByNome(@PathVariable String nome){
         return ResponseEntity.ok().body(clientService.findByNome(nome));
     }
@@ -37,18 +37,18 @@ public class ClientController {
         return ResponseEntity.ok().body(clientService.create(client));
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/cliente/{id}")
     public ResponseEntity<Client> deleteClient(@PathVariable Long id){
         clientService.delete(id);
         return ResponseEntity.status(HttpStatus.OK).build();
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/cliente/{id}")
     public ResponseEntity<Client> updateClient(@PathVariable Long id, @RequestBody Client client){
         return ResponseEntity.ok().body(clientService.update(id, client));
     }
 
-    @GetMapping("/export/excel")
+    @GetMapping("/cliente/export/excel")
     public void exportToExcel(HttpServletResponse response) throws IOException {
         response.setContentType("application/octet-stream");
         DateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd_HH:mm:ss");

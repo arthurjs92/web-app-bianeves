@@ -13,7 +13,7 @@ function Sobre() {
         <div className="col-6">
           <div className="d-flex box-container">
             <div className="col box-arvore">
-              <img src={ImagemArvore} />
+              <img src={ImagemArvore} className="img-responsive img-rounded"/>
             </div>
             <div className="col box-frase align-self-end">
               <p>“Designer, arte educadora, marceneira e{" "}<spam className="frase-destaque">
@@ -32,7 +32,7 @@ function Sobre() {
 
         <div className="col-6 imagem-bia">
           <div>
-            <img src={ImagemBia} />
+            <img src={ImagemBia} className="img-responsive img-rounded"/>
           </div>
         </div>
       </div>

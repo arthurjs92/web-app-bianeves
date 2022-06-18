@@ -2,6 +2,7 @@ package com.bialandingpage.marcenariacriativa.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.validation.annotation.Validated;
 
 import javax.persistence.*;
 
@@ -9,7 +10,8 @@ import javax.persistence.*;
 @Table
 @Data
 @NoArgsConstructor
-public class User {
+@Validated
+public class User implements java.io.Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
     private Long id_user;
@@ -18,4 +20,9 @@ public class User {
     private String password;
     private String role;
 
+    public User(String username, String password, String role) {
+        this.username = username;
+        this.password = password;
+        this.role = role;
+    }
 }
