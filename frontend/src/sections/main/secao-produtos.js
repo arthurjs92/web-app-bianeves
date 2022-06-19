@@ -1,5 +1,5 @@
 import React from "react";
-import CompanyLogo from "../../img/imagens-main/logo2 - Bia Neves.png";
+import CompanyLogo from "../../img/imagens-main/logo-bia-3.png";
 import LogoMadeira from "../../img/imagens-main/logoMadeira.png";
 import Produto1 from "../../img/imagens-main/produto1.jpg";
 import Produto2 from "../../img/imagens-main/produto2.jpg";
@@ -19,10 +19,10 @@ function Produtos() {
           <img src={CompanyLogo} alt="Logo Bia" />
         </div>
         <div className="flex-column title-desc w-50">
-          <h1>
+          <h2 className="titulo" id="sessao-produtos">
             Conheça alguns dos nossos{" "}
-            <span className="color-name">produtos</span>
-          </h1>
+            <span className="titulo-destaque">produtos</span>
+          </h2>
           <p>
             Esperamos que você ame e aprecie nossos produtos tanto em seu uso
             quanto na forma em que foi criada.

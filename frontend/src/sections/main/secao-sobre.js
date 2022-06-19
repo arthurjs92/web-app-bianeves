@@ -5,7 +5,7 @@ import ImagemArvore from "../../img/imagens-main/arvore.png";
 function Sobre() {
   return (
     <div className="sessao-sobre">
-      <h2 className="titulo container titulo-sobre-bia">
+      <h2 className="titulo container titulo-sobre-bia" id="sessao-sobre">
         Sobre a <spam className="titulo-destaque">Bia</spam>
       </h2>
 

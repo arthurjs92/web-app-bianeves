@@ -1,5 +1,5 @@
 import React from "react";
-import LogoFooter from "../../img/imagens-footer/logo-footer2.png";
+import LogoFooter from "../../img/imagens-footer/logo-footer.png";
 import GmailImg from "../../img/imagens-footer/gmail.png";
 import IgImg from "../../img/imagens-footer/instagram.png";
 import WhatsAppImg from "../../img/imagens-footer/whatsapp.png";
@@ -9,7 +9,7 @@ function Contatos() {
     <footer className="bg-dark text-white pt-5 pb-4">
       <div className="container text-center text-md-left">
         <div className="row text-center text-md-left">
-          <div className="col-md-3 col-lg-3 mx-auto mt-3">
+          <div className="col-md-3 col-lg-3 mx-auto mt-3" id="sessao-footer">
             <h5 className="mb-4 font-weight-bold ">
               E-mail
             </h5>

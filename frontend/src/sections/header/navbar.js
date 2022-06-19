@@ -5,13 +5,13 @@ function Navbar() {
     <div className="navbar">
         <nav className="col-10 nav nav-pills nav-fill">
             <div className="logo-nav">
-                <a className="nav-item nav-link" href="#">Bia Neves</a>
+                <a className="nav-item nav-link" href="#sessao-destaque">Bia Neves</a>
             </div>
-            <a className="nav-item nav-link" href="#">Início</a>
-            <a className="nav-item nav-link" href="#">Sobre mim</a>
-            <a className="nav-item nav-link" href="#">Produtos</a>
-            <a className="nav-item nav-link" href="#">Contatos</a>
-            <a className="nav-item nav-link active botao" href="#">Inscreva-se</a>
+            <a className="nav-item nav-link" href="#sessao-inicial">Início</a>
+            <a className="nav-item nav-link" href="#sessao-sobre">Sobre mim</a>
+            <a className="nav-item nav-link" href="#sessao-produtos">Produtos</a>
+            <a className="nav-item nav-link" href="#sessao-footer">Contatos</a>
+            <a className="nav-item nav-link active botao" href="#sessao-form-promocoes">Inscreva-se</a>
         </nav>
     </div>
   );

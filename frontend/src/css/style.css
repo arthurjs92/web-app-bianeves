@@ -78,7 +78,7 @@
 /*Formatacao main - seção Transver*/
 .sessao-transver {
   padding: 50px 0px 50px 0px;
-  height: 700px;
+  height: 850px;
 }
 
 .sessao-transver h2{
@@ -91,7 +91,12 @@
 }
 
 .imagem-principal-produtos img {
-  width: 80%;
+  width: 560px;
+  height: 360px;
+  border-radius: 20px;
+}
+
+.video-producao iframe {
   border-radius: 20px;
 }
 
@@ -121,14 +126,13 @@
 }
 
 .imagem-bia img {
-  width: 80%;
+  width: 70%;
   border-radius: 10px;
-
 }
 
 .box-frase p {
   background-color: white;
-  padding: 5px;
+  padding: 15px;
   margin: 0px;
   border-radius: 10px;
   width: 100%;
@@ -225,7 +229,7 @@
 }
 
 .title-desc{
-  text-align: justify;
+  text-align: left;
   margin-top: 40px;
 }
 
@@ -234,12 +238,8 @@
   margin-top: 40px;
 }
 
-.title-desc-center h1{
+.title-desc-center h2{
   padding: 20px;
-}
-
-.color-name{
-  color: #BF7960;
 }
 
 .div-margin{

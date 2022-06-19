@@ -1,14 +1,13 @@
 import React from "react";
-import logoarc from "../../img/imagens-main/logo-formulario2.png";
-import logoform from "../../img/imagens-main/Prancheta 2.png";
+import logoarc from "../../img/imagens-main/logo-formulario.png";
 
 function Promocoes() {
   return (
     <section className="section-promocoes">
       <div className="title-desc-center">
-        <h1>
-          Lançamentos e <span className="color-name">promoções</span>
-        </h1>
+        <h2 className="titulo" id="sessao-form-promocoes">
+          Lançamentos e <span className="titulo-destaque">promoções</span>
+        </h2>
         <p>Quer conhecer mais sobre o Ateliê Bia Neves?</p>
         <p>
           Se inscreva e fique por dentro de todos os lançamentos e promoções
@@ -60,7 +59,7 @@ function Promocoes() {
                   type="text"
                   className="form-control"
                   id="inputCidade"
-                  placeholder="cidade"
+                  placeholder="Cidade"
                   required
                 />
               </div>
