@@ -16,13 +16,13 @@ function Promocoes() {
         </div>
       </div>
 
-      <div className="d-flex justify-content-center flex-row align-items-start flex-wrap-reverse bg-color col-sm-10 col-md-10 col-lg-8 col-xl-6">
+      <div className="d-flex justify-content-center flex-row align-items-start flex-wrap-reverse bg-color col-sm-10 col-md-10 col-lg-8 ">
         
-        <div className="flex-column col-md-6 col-lg-6 col-xl-8">
-          <img src={logoarc} className="form-img img-fluid d-block" />
+        <div className="flex-column col-md-6 col-lg-6 ">
+          <img src={logoarc} className="form-img img-fluid d-block"/>
         </div>
 
-        <div className="flex-column col-md-6 col-lg-6 col-xl-4">
+        <div className="flex-column col-md-6 col-lg-6 ">
           <form className="form-horizontal form-color col-xs-3">
             <div className="form-group row padding-form">
               <div className="col form-group">
