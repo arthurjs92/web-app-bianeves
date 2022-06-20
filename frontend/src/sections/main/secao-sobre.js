@@ -7,7 +7,7 @@ function Sobre() {
     <section>
       <div className="sessao-sobre">
 
-        <div className="container d-flex flex-wrap ">
+        <div className="container d-flex flex-wrap">
 
           <div>
             <img

@@ -94,7 +94,6 @@
 
 
 /*Formatacao main - seção Transver*/
-
 .sessao-transver h2{
   margin-right: 50px;
 }
@@ -180,6 +179,96 @@
   text-align: left;
 }
 
+
+/*Formatacao main - seção Produtos*/
+/*Arthur*/
+
+.section-produtos{
+  margin-bottom: 40px;
+}
+
+.width-img{
+  width: 250px !important;
+  height: 250px !important;
+  margin-top: 60px !important;
+  padding-right: 0px !important;
+  border-radius: 20px;
+}
+
+.div-logo {
+  text-align: center;
+  margin: 0px;
+}
+
+.box-madeira img {
+  margin-top: 25%;
+}
+
+
+.title-desc{
+  text-align: left;
+  margin-top: 40px;
+}
+
+.title-desc-center{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.title-desc-center h2{
+  padding: 20px;
+}
+
+.div-margin{
+  margin-right:60px;
+}
+
+
+.section-promocoes{
+  background-color: #ECECEC;
+  padding-bottom: 40px;
+}
+
+.bg-color{
+  background-color:#BF7960;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.form-color{
+  background-color: #f2f2f0;
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.padding-form{
+  padding:10px;
+}
+
+.button-adjust{
+  margin-left: 33%;
+  margin-top: 20px;
+}
+
+.btn {
+	background-color: #BF7960 !important;
+  color: #f2f2f0 !important;
+  padding: 10px 20px !important;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*Formatacao - THANK YOU PAGE*/
 .thankyou-page{
   background-color: #FFE7DB;
@@ -229,81 +318,6 @@
 /*Formatacao - TELA HOME (Acesso Bia)*/
 
 /*Formatacao - TELA UPDATE (Acesso Bia)*/
-
-/*Arthur*/
-
-.section-produtos{
-  margin-bottom: 40px;
-}
-.section-promocoes{
-  background-color: #ECECEC;
-  padding-bottom: 40px;
-}
-
-.width-img{
-  width: 250px !important;
-  height: 250px !important;
-  margin-top: 60px !important;
-  padding-right: 0px !important;
-  border-radius: 20px;
-}
-
-.div-logo img{
-  width: 400px !important;
-  height: 300px !important;
-  padding-right: -55px;
-  margin-bottom: -55px;
-}
-
-.title-desc{
-  text-align: left;
-  margin-top: 40px;
-}
-
-.title-desc-center{
-  text-align: center;
-  margin-top: 40px;
-}
-
-.title-desc-center h2{
-  padding: 20px;
-}
-
-.div-margin{
-  margin-right:60px;
-}
-
-.bg-color{
-  background-color:#BF7960;
-  border-radius: 20px;
-  margin-top: 40px;
-}
-
-.form-color{
-  background-color: #f2f2f0;
-  padding: 40px 20px;
-  border-radius: 20px;
-  margin-top: 40px;
-}
-
-.padding-form{
-  padding:10px;
-}
-
-.button-adjust{
-  margin-left: 33%;
-  margin-top: 20px;
-}
-
-.btn {
-	background-color: #BF7960 !important;
-  color: #f2f2f0 !important;
-  padding: 10px 20px !important;
-  text-align: center;
-}
-
-
-
 
 
 
