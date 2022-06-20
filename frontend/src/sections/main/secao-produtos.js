@@ -19,7 +19,7 @@ function Produtos() {
           <div className="flex-column div-logo col-xs-2 col-sm-2 col-md-2 col-lg-3">
             <img src={CompanyLogo} className="img-responsive img-fluid d-block" alt="Logo Bia" />
           </div>
-          <div className="flex-column title-desc w-50 col-xs-10 col-sm-10 col-md-10 col-lg-8">
+          <div className="flex-wrap flex-column title-desc w-50 col-xs-10 col-sm-10 col-md-10 col-lg-8">
               <div className="d-flex flex-wrap ">
                 <div className="col">
                   <h2 className="titulo" id="sessao-produtos">
