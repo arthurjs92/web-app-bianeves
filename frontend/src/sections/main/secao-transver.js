@@ -10,7 +10,7 @@ function Transver() {
           <img src={ImagemProdutos} className="img-responsive img-fluid d-block"/>
         </div>
         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-          <h2 className="titulo-transver" id="sessao-inicial">O transver através das <spam className="titulo-destaque">transformações da natureza</spam></h2>
+          <h2 className="titulo titulo-transver" id="sessao-inicial">O transver através das <spam className="titulo-destaque">transformações da natureza</spam></h2>
           <p>Em um mundo cada vez mais obcecado com velocidade, produção em massa e descarte, optamos por ficar do outro lado da moeda.</p>
         </div>
       </div>

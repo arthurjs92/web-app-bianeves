@@ -21,21 +21,25 @@
   text-align:left;
 }
 
-.titulo-transver{
-  font-family: 'Volkhov', serif;
-  font-weight: bold;
-  text-align:left;
-  margin: 36px;
-}
-
 .titulo-destaque {
   font-family: 'Volkhov', serif;
   font-weight: bold;
   color: #BF7960;
 }
+
 .frase-destaque {
   color: #BF7960;
 }
+
+.titulo-transver {
+  margin: 36px;
+}
+
+.titulo-produtos {
+  margin: 0px;
+  justify-content: center;
+}
+
 
 /*Formatacao header - navbar*/
 .navbar {
@@ -181,17 +185,13 @@
 
 
 /*Formatacao main - seção Produtos*/
-/*Arthur*/
 
-.section-produtos{
-  margin-bottom: 40px;
+.sessao-produtos{
+  padding: 50px 0px;
 }
 
 .width-img{
-  width: 250px !important;
-  height: 250px !important;
-  margin-top: 60px !important;
-  padding-right: 0px !important;
+  margin-top: 50px;
   border-radius: 20px;
 }
 
@@ -200,33 +200,12 @@
   margin: 0px;
 }
 
-.box-madeira img {
-  margin-top: 25%;
-}
 
+/*Formatacao main - seção Promoções*/
 
-.title-desc{
-  text-align: left;
-  margin-top: 40px;
-}
-
-.title-desc-center{
-  text-align: center;
-  margin-top: 40px;
-}
-
-.title-desc-center h2{
-  padding: 20px;
-}
-
-.div-margin{
-  margin-right:60px;
-}
-
-
-.section-promocoes{
+.sessao-promocoes{
   background-color: #ECECEC;
-  padding-bottom: 40px;
+  padding: 50px 0px;
 }
 
 .bg-color{
@@ -239,7 +218,7 @@
   background-color: #f2f2f0;
   padding: 40px 20px;
   border-radius: 20px;
-  margin-top: 40px;
+  margin: 30px;
 }
 
 .padding-form{
@@ -258,16 +237,17 @@
   text-align: center;
 }
 
+/*Formatacao footer*/
+.footer {
+  background-color: #404040;
+}
+
+.font-footer {
+  color: #f2f2f0;
+}
 
 
-
-
-
-
-
-
-
-
+/* ////////////////////////// */
 
 /*Formatacao - THANK YOU PAGE*/
 .thankyou-page{
@@ -281,9 +261,11 @@
 .box-logo-tnk{
   width: 30%;
 }
+
 .box-thankyou {
   padding: 30px 0px 30px 0px;
 }
+
 .box-thankyou h4 {
   padding: 10px;
 }

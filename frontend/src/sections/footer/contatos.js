@@ -6,20 +6,20 @@ import WhatsAppImg from "../../img/imagens-footer/whatsapp.png";
 
 function Contatos() {
   return (
-    <footer className="bg-dark text-white pt-5 pb-4">
+    <footer className="pt-5 pb-4 footer">
       <div className="container text-center text-md-left">
         <div className="row text-center text-md-left">
           <div className="col-md-3 col-lg-3 mx-auto mt-3" id="sessao-footer">
-            <h5 className="mb-4 font-weight-bold ">
+            <p className="text-light mb-4 font-weight-bold d-none d-md-block">
               E-mail
-            </h5>
-            <h5 className="mb-4 font-weight-bold ">
+            </p>
+            <p className="text-light mb-4 font-weight-bold d-none d-md-block">
               Telefone
-            </h5>
-            <h5 className="mb-4 font-weight-bold ">
+            </p>
+            <p className="text-light mb-4 font-weight-bold d-none d-md-block">
               Local
-            </h5>
-            <div className="row ml-5">
+            </p>
+            <div className="collum ml-5 d-flex align-items-md-center">
               <div className="col-md-d col-lg-4 ">
                 <img src={GmailImg} className="img-fluid" />
               </div>
@@ -31,23 +31,23 @@ function Contatos() {
               </div>
             </div>
           </div>
-          <div className="col-md-4 col-lg-4 mx-auto mt-3">
-            <h5 className="mb-4 font-weight-bold">
+          <div className="col-md-5 col-lg-5 mx-auto mt-3">
+            <p className="text-light mb-4 font-weight-bold">
               biancapneves@gmail.com
-            </h5>
-            <h5 className="mb-4 font-weight-bold ">
+            </p>
+            <p className="text-light mb-4 font-weight-bold ">
               (34) 9 9914-3153
-            </h5>
-            <h5 className="mb-4 font-weight-bold ">
+            </p>
+            <p className="text-light mb-4 font-weight-bold ">
               Uberlândia | MG
-            </h5>
+            </p>
           </div>
-          <div className="col-md-5 col-lg-4 mx-auto mt-3">
+          <div className="col-md-4 col-lg-3 mx-auto mt-3">
             <img src={LogoFooter} className="img-fluid d-block" />
           </div>
-          <hr className="mb-4" />
+          <hr className="text-light mb-4" />
           <div className="col-md-7 col-lg-8">
-            <p>© Bia Neves Marcenaria Criativa, 2022. Todos os direitos reservados</p>
+            <p className="font-footer">© Bia Neves Marcenaria Criativa, 2022. Todos os direitos reservados</p>
           </div>
         </div>
       </div>

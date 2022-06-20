@@ -8,14 +8,12 @@ function Sobre() {
       <div className="sessao-sobre">
 
         <div className="container d-flex flex-wrap">
-
           <div>
             <img
               src={ImagemArvore}
               className="img-responsive img-rounded img-fluid"
             />
           </div>
-
           <div className="col align-self-end titulo-bia-desc">
             <h2 className="titulo container titulo-sobre-bia" id="sessao-sobre">
               Sobre a <spam className="titulo-destaque">Bia</spam>
@@ -28,7 +26,6 @@ function Sobre() {
               </spam>
             </p>
           </div>
-
         </div>
 
         <div className="container d-flex flex-wrap">
@@ -49,7 +46,6 @@ function Sobre() {
           </div>
 
         </div>
-        
       </div>
     </section>
   );

@@ -12,29 +12,32 @@ import Produto8 from "../../img/imagens-main/produto8.jpg";
 
 function Produtos() {
   return (
-    <section className="section-produtos">
+    <section className="sessao-produtos">
 
       <div class="container d-flex  flex-row  flex-wrap div-margin">
         <div className="row align-items-center">
-          <div className="flex-column div-logo col-xs-2 col-sm-2 col-md-2 col-lg-3">
-            <img src={CompanyLogo} className="img-responsive img-fluid d-block" alt="Logo Bia" />
+          <div className="flex-column div-logo w-25 d-none d-md-block col-md-2 col-lg-3">
+            <img src={CompanyLogo} className="img-responsive img-rounded img-fluid" alt="Logo Bia" />
           </div>
-          <div className="flex-column title-desc w-50 col-xs-10 col-sm-10 col-md-10 col-lg-8">
-              <div className="d-flex flex-wrap ">
-                <div className="col">
-                  <h2 className="titulo" id="sessao-produtos">
+          <div className="flex-column w-75 title-desc col-xs-12 col-sm-12 col-md-10 col-lg-9">
+              <div className="d-flex flex-wrap">
+                <div className="col align-self-end ">
+                  <h2 className="titulo titulo-produtos" id="sessao-produtos">
                   Conheça alguns dos nossos{" "}
                   <span className="frase-destaque">produtos</span>
                   </h2>
                 </div>
-                <div className="col-2 box-madeira">
+                <div className="box-madeira align-self-end">
                   <img src={LogoMadeira} className="img-responsive"/>
                 </div>
               </div>
-              <p className="mt-3">
-                Esperamos que você ame e aprecie nossos produtos tanto em seu uso
-                quanto na forma em que foi criada.
-              </p>
+              <div className="justify-content-start">
+                <p className="mt-3">
+                  Esperamos que você ame e aprecie nossos produtos tanto em seu uso
+                  quanto na forma em que foi criada.
+                </p>
+              </div>
+
           </div>
         </div>
         
