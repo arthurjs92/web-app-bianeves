@@ -1,28 +1,23 @@
 package com.bialandingpage.marcenariacriativa.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.validation.annotation.Validated;
 
-import javax.persistence.*;
 
-@Entity
-@Table
 @Data
 @NoArgsConstructor
-@Validated
-public class User implements java.io.Serializable{
+@Entity
+public class User {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
-    private Long id_user;
-
+    private Integer id;
     private String username;
     private String password;
-    private String role;
 
-    public User(String username, String password, String role) {
-        this.username = username;
-        this.password = password;
-        this.role = role;
-    }
 }
