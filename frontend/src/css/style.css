@@ -18,7 +18,16 @@
 .titulo {
   font-family: 'Volkhov', serif;
   font-weight: bold;
+  text-align:left;
 }
+
+.titulo-transver{
+  font-family: 'Volkhov', serif;
+  font-weight: bold;
+  text-align:left;
+  margin: 36px;
+}
+
 .titulo-destaque {
   font-family: 'Volkhov', serif;
   font-weight: bold;
@@ -28,10 +37,10 @@
   color: #BF7960;
 }
 
-
 /*Formatacao header - navbar*/
 .navbar {
   background-color: #FAFAFA;
+  padding: 20px 0px 20px 0px !important;
 }
 
 .nav a {
@@ -39,7 +48,7 @@
   /*ajustar aqui a formatacao da cor azul*/
 }
 
-.logo-nav a {
+.logo-nav {
   font-weight: bold;
   font-family: 'Volkhov', serif;
 }
@@ -48,98 +57,118 @@
   background-color: #BF7960 !important;
 }
 
-
 /*Formatacao header - destaque */
 .sessao-destaque {
   background-color: #F2F2F0 ;
   text-align: center;
-  height: 600px;
+  padding-bottom: 30px;
+}
+
+.nav-link:hover{
+  color: #BF7960 !important;
+}
+
+.nav-link-ic:hover{
+  color: #404040 !important;
 }
 
 .subtitulo {
-  background-color: white;
+  background-color: #BF7960;
+  color: white;
   box-shadow: 8px 5px 5px #E5E5E5;
   font-weight:bold;
-  padding: 12px;
+  padding: 1.4vw;
   border-radius: 14px;
-  width: 50%;
+  height: 4vmax 4vmin;
+  width: 20vmax;
+  font-size: clamp(1em, 1em + 1vw, 1.3em);
 }
 
-.box-logo img {
-  width: 60%;
+.box-logo{
+  margin-bottom: 40px;
 }
 
 .box-imagem-marcenaria img {
-  width: 80%;
   border-radius: 0px 100px 0px 100px;
 }
 
 
 /*Formatacao main - seção Transver*/
-.sessao-transver {
-  padding: 50px 0px 50px 0px;
-  height: 850px;
-}
 
 .sessao-transver h2{
   margin-right: 50px;
 }
 
 .sessao-transver p{
-  padding: 30px 0px 30px 0px;
-  margin: 0px 80px 0px 0px;
+  margin: 36px;
 }
 
 .imagem-principal-produtos img {
-  width: 560px;
-  height: 360px;
   border-radius: 20px;
 }
 
 .video-producao iframe {
+  margin-top: 20px;
   border-radius: 20px;
 }
 
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height:90%;
+  padding: 10px;
+}
+
+.container-iframe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 30%;
+}
+
+.video-producao{
+  text-align: center;
+  position: relative;
+}
+
 .box-imagem-produto {
-  padding: 20px 0px 20px 0px;
+  padding: 40px 0px 20px 0px;
 }
 
 .box-video-producao {
-  padding: 20px 0px 50px 0px;
+  padding: 40px 0px 50px 0px;
+  align-items: center;
 }
-
 
 /*Formatacao main - seção Sobre a Bia*/
 .sessao-sobre {
-  padding: 50px 0px 50px 0px;
+  padding: 50px 0px;
   background-color: #FFE7DB;
-  text-align: center;
-  height: 600px;
-}
-
-.sessao-sobre h2 {
-  margin-left: 80px;
-}
-
-.titulo-sobre-bia {
   text-align: left;
 }
 
-.imagem-bia img {
-  width: 70%;
-  border-radius: 10px;
+.titulo-bia-desc p {
+  margin-left: 12px;
 }
 
-.box-frase p {
-  background-color: white;
-  padding: 15px;
-  margin: 0px;
+.imagem-bia img {
+  text-align:center;
   border-radius: 10px;
-  width: 100%;
 }
 
 .box-frase {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 85%;
+  text-align: center;
+  justify-content: center;
   align-items: center;
+  margin: 20px;
 }
 
 .box-container {
@@ -150,7 +179,6 @@
   margin: 0px;
   text-align: left;
 }
-
 
 /*Formatacao - THANK YOU PAGE*/
 .thankyou-page{
@@ -183,7 +211,6 @@
 .box-redessociais a {
   text-decoration: none;
 }
-
 
 /*Formatacao - TELA LOGIN (Acesso Bia)*/
 .form-button {

@@ -4,39 +4,54 @@ import ImagemArvore from "../../img/imagens-main/arvore.png";
 
 function Sobre() {
   return (
-    <div className="sessao-sobre">
-      <h2 className="titulo container titulo-sobre-bia" id="sessao-sobre">
-        Sobre a <spam className="titulo-destaque">Bia</spam>
-      </h2>
+    <section>
+      <div className="sessao-sobre">
 
-      <div className="container d-flex">
-        <div className="col-6">
-          <div className="d-flex box-container">
-            <div className="col box-arvore">
-              <img src={ImagemArvore} className="img-responsive img-rounded"/>
-            </div>
-            <div className="col box-frase align-self-end">
-              <p>“Designer, arte educadora, marceneira e{" "}<spam className="frase-destaque">
-                  amante da natureza e suas minúcias."</spam>
+        <div className="container d-flex flex-wrap ">
+
+          <div>
+            <img
+              src={ImagemArvore}
+              className="img-responsive img-rounded img-fluid"
+            />
+          </div>
+
+          <div className="col align-self-end titulo-bia-desc">
+            <h2 className="titulo container titulo-sobre-bia" id="sessao-sobre">
+              Sobre a <spam className="titulo-destaque">Bia</spam>
+            </h2>
+            <p className="mt-4">
+              “Designer, arte educadora, marceneira e
+              <br />
+              <spam className="frase-destaque">
+                amante da natureza e suas minúcias."
+              </spam>
+            </p>
+          </div>
+
+        </div>
+
+        <div className="container d-flex flex-wrap">
+          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
+            <div className="box-frase">
+              <p>
+                "Inspirada nas sutilezas da natureza busco minhas inspirações e
+                matéria – prima,<spam className="frase-destaque"> para criar peças bonitas e originais, com um toque fresco e contemporâneo.”</spam>
               </p>
             </div>
           </div>
-          <div className="container box-frase align-self-end">
-            <p>
-              "Inspirada nas sutilezas da natureza busco minhas inspirações e
-              matéria – prima, para criar peças bonitas e originais, com um
-              toque fresco e contemporâneo.”
-            </p>
-          </div>
-        </div>
 
-        <div className="col-6 imagem-bia">
-          <div>
-            <img src={ImagemBia} className="img-responsive img-rounded"/>
+          <div className="flex-column col-xs-12 col-sm-12 col-md-10 col-lg-6 imagem-bia">
+            <img
+              src={ImagemBia}
+              className="img-responsive img-rounded img-fluid"
+            />
           </div>
+
         </div>
+        
       </div>
-    </div>
+    </section>
   );
 }
 

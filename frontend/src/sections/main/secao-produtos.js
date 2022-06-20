@@ -12,7 +12,7 @@ import Produto8 from "../../img/imagens-main/produto8.jpg";
 
 function Produtos() {
   return (
-    <section className="w-75 section-produtos">
+    <section className="section-produtos">
 
       <div class="d-flex justify-content-center flex-row align-items-center flex-wrap div-margin">
         <div className="flex-column div-logo">
