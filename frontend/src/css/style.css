@@ -81,15 +81,16 @@
   color: white;
   box-shadow: 8px 5px 5px #E5E5E5;
   font-weight:bold;
-  padding: 1.4vw;
-  border-radius: 14px;
+  padding: 15px;
+  border-radius: 10px;
   height: 4vmax 4vmin;
-  width: 25vmax;
+  /* width: 25vmax; */
   font-size: clamp(1em, 1em + 1vw, 1.3em);
 }
 
 .box-logo{
   margin-bottom: 40px;
+  display: flex;
 }
 
 .box-imagem-marcenaria img {
@@ -131,6 +132,16 @@
   overflow: hidden;
   width: 100%;
   padding-top: 30%;
+  min-height: 234px;
+}
+
+.form-control {
+  border: solid #bf7960 1px !important;
+  box-shadow: none !important;
+}
+
+label input:checked ~ span {
+  background-color: #bf7960 !important;
 }
 
 .video-producao{
