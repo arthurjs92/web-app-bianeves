@@ -1,22 +1,29 @@
 package com.bialandingpage.marcenariacriativa.controller;
 
-import com.bialandingpage.marcenariacriativa.excel.ClientExcelExporter;
-import com.bialandingpage.marcenariacriativa.model.Client;
-import com.bialandingpage.marcenariacriativa.service.ClientService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
-import javax.servlet.http.HttpServletResponse;
-import javax.validation.Valid;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.bialandingpage.marcenariacriativa.excel.ClientExcelExporter;
+import com.bialandingpage.marcenariacriativa.model.Client;
+import com.bialandingpage.marcenariacriativa.service.ClientService;
+
 @RestController
-@RequestMapping("/administracao")
+@RequestMapping("/admin")
 public class ClientController {
 
     @Autowired
@@ -30,11 +37,6 @@ public class ClientController {
     @GetMapping("/clientes")
     public ResponseEntity<Iterable<Client>> getAllClientes(){
         return ResponseEntity.ok().body(clientService.findAll());
-    }
-
-    @PostMapping
-    public ResponseEntity<Client> createClient(@Valid @RequestBody Client client){
-        return ResponseEntity.ok().body(clientService.create(client));
     }
 
     @DeleteMapping("/clientes/{id}")

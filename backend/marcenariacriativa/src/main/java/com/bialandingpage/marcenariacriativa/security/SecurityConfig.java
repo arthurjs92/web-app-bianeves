@@ -42,9 +42,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 
         http
-                .authorizeHttpRequests((authorize) -> authorize
-                        .anyRequest().authenticated())
-                .csrf((csrf) -> csrf.ignoringAntMatchers("/login"))
+                .cors().and()
+                .authorizeHttpRequests().antMatchers("/client").permitAll()
+                .anyRequest().authenticated().and()
+                .csrf((csrf) -> csrf.ignoringAntMatchers("/login","/client"))
                 .httpBasic(Customizer.withDefaults())
                 .oauth2ResourceServer(OAuth2ResourceServerConfigurer::jwt)
                 .sessionManagement((session) -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))

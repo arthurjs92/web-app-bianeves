@@ -1,7 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import logoarc from "../../img/imagens-main/logo-formulario1.png";
+import * as api from "../../services/Endpoints";
 
 function Promocoes() {
+  const estadoInicial = {
+    nome: "",
+    cidade: "",
+    email: "",
+    telefone: "",
+  };
+  const [dados, setDados] = useState(estadoInicial);
+
+  const trataCampo = (event) => {
+    const { name, value } = event.target;
+    setDados({ ...dados, [name]: value });
+  };
+
+  const EnviarDados = () => {
+    console.log(dados);
+    api
+      .create(dados)
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+      useNavigate("/thankyou",{ replace:true })
+  };
+
   return (
     <section className="sessao-promocoes">
       <div className="container">
@@ -17,13 +45,12 @@ function Promocoes() {
       </div>
 
       <div className="d-flex justify-content-center flex-row align-items-start flex-wrap-reverse bg-color col-sm-10 col-md-10 col-lg-8 ">
-        
         <div className="flex-column col-md-6 col-lg-6 ">
-          <img src={logoarc} className="form-img img-fluid d-block"/>
+          <img src={logoarc} className="form-img img-fluid d-block" />
         </div>
 
         <div className="flex-column col-md-6 col-lg-6 ">
-          <form className="form-horizontal form-color col-xs-3">
+          <div className="form-horizontal form-color col-xs-3">
             <div className="form-group row padding-form">
               <div className="col form-group">
                 <input
@@ -32,6 +59,9 @@ function Promocoes() {
                   id="inputNome"
                   placeholder="Nome"
                   required
+                  value={dados.nome}
+                  onChange={trataCampo}
+                  name="nome"
                 />
               </div>
             </div>
@@ -43,6 +73,9 @@ function Promocoes() {
                   id="inputPassword"
                   placeholder="Telefone"
                   required
+                  value={dados.telefone}
+                  onChange={trataCampo}
+                  name="telefone"
                 />
               </div>
             </div>
@@ -54,6 +87,9 @@ function Promocoes() {
                   id="inputPassword"
                   placeholder="E-mail"
                   required
+                  value={dados.email}
+                  onChange={trataCampo}
+                  name="email"
                 />
               </div>
             </div>
@@ -65,15 +101,28 @@ function Promocoes() {
                   id="inputCidade"
                   placeholder="Cidade"
                   required
+                  value={dados.cidade}
+                  onChange={trataCampo}
+                  name="cidade"
                 />
               </div>
+              <div className="terms">
+                <label>
+                  Eu li e concordo com os termos de uso.
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </div>
             </div>
-            <div className="form-group">
-              <button type="submit" className="btn btn-default button-adjust">
+            <div className="form-group form-btn">
+              <button
+                className="btn btn-default button-adjust"
+                onClick={EnviarDados}
+              >
                 Enviar
               </button>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </section>

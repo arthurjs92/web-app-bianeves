@@ -84,7 +84,7 @@
   padding: 1.4vw;
   border-radius: 14px;
   height: 4vmax 4vmin;
-  width: 20vmax;
+  width: 25vmax;
   font-size: clamp(1em, 1em + 1vw, 1.3em);
 }
 
@@ -225,9 +225,8 @@
   padding:10px;
 }
 
-.button-adjust{
-  margin-left: 33%;
-  margin-top: 20px;
+.form-btn{
+  text-align: center;
 }
 
 .btn {
@@ -302,7 +301,61 @@
 /*Formatacao - TELA UPDATE (Acesso Bia)*/
 
 
+.terms {
+  padding:20px;
+  font-size:18px;
+}
 
+/* container */
+label {
+  position: relative; /* to contain absolute elements */
+  padding-left:30px; /* free space for custom checkbox */
+  cursor: pointer;
+}
+/* hide default checkbox  */
+label input[type=checkbox] {
+  position: absolute; /* prevent taking any space */
+  /* cross-browser hidingg */
+  width:0; 
+  height:0;
+}
+/* custom checkbox */
+label span {
+  position: absolute;
+  /* position to the free space in <label> */
+  top:0;
+  left:0;
+  width:20px; 
+  height:20px;
+  background-color: #ddd;
+  transition: .3s background-color; /* slight transition */
+}
+/* the check icon */
+label span:after {
+  content: "";
+  position: absolute;
+  display: none;
+  
+  /* check icon */
+  left: 6px;
+  top: 2px;
+  width: 4px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+label:hover span {
+  background-color: #ccc;
+}
+
+/**** Here's the trick ***/
+label input:checked ~ span {
+  background-color: #2eaadc;
+}
+label input:checked ~ span:after {
+  display:block;
+}
 
 
 
