@@ -1,9 +1,20 @@
-import React from 'react';
+import React from "react";
+import Whatsapp from "../../img/imagens-header/whatsapp.png";
 
 function BotaoFlutuante() {
   return (
-    <div>
-
+    <div className="whats">
+      <a
+        href="https://wa.me/5534999143153?text=Desejo%20fazer%20um%20orçamento"
+        target="_blank"
+      >
+        <img
+          src={Whatsapp}
+          width="75"
+          alt="Fale conosco pelo Whatsapp"
+          title="Fale conosco pelo Whatsapp"
+        />
+      </a>
     </div>
   );
 }
