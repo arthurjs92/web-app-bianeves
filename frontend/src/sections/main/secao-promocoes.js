@@ -18,18 +18,19 @@ function Promocoes() {
     setDados({ ...dados, [name]: value });
   };
 
-  const EnviarDados = () => {
+  const enviarDados = () => {
     console.log(dados);
     api
       .create(dados)
       .then((response) => {
         console.log(response);
+        window.location.href = "/thankyou";
+
       })
       .catch((e) => {
         console.log(e);
       });
       
-      <Navigate to="/thankyou" replace={true} />
   };
 
   return (
@@ -119,7 +120,7 @@ function Promocoes() {
             <div className="form-group form-btn">
               <button
                 className="btn btn-default button-adjust"
-                onClick={EnviarDados}
+                onClick={enviarDados}
               >
                 Enviar
               </button>
