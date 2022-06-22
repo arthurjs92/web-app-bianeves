@@ -14,8 +14,8 @@ function ThankYouPage() {
             <h4 className="frase-destaque">Retornaremos o contato o mais breve possível.</h4>
         </div>
         <div className="container box-redessociais">
-            <a href="https://instagram.com/bia.pneves?igshid=YmMyMTA2M2Y="><img src={LogoInstagram}/></a>
-            <p>Nos acompanhe pelo Instagram! <a href="https://instagram.com/bia.pneves?igshid=YmMyMTA2M2Y=" 
+            <a href="https://instagram.com/bia.pneves?igshid=YmMyMTA2M2Y=" target="_blank"><img src={LogoInstagram}/></a>
+            <p>Nos acompanhe pelo Instagram! <a href="https://instagram.com/bia.pneves?igshid=YmMyMTA2M2Y=" target="_blank" 
             className="frase-destaque">@bia.pneves</a></p>
         </div>
   </div>

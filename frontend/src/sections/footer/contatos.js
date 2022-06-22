@@ -21,13 +21,19 @@ function Contatos() {
             </p>
             <div className="collum ml-5 d-flex align-items-md-center">
               <div className="col-md-d col-lg-4 ">
-                <img src={GmailImg} className="img-fluid" />
+                <a href="mailto:biancapneves@gmail.com">
+                  <img src={GmailImg} className="img-fluid" />
+                </a>
               </div>
               <div className="col-md-d col-lg-4 ">
-                <img src={IgImg} className="img-fluid" />
+                <a href="https://instagram.com/bia.pneves?igshid=YmMyMTA2M2Y=" target="_blank">
+                  <img src={IgImg} className="img-fluid" />
+                </a>
               </div>
               <div className="col-md-d col-lg-4 ">
-                <img src={WhatsAppImg} className="img-fluid" />
+                <a href="https://wa.me/5534999143153?text=Desejo%20fazer%20um%20orçamento" target="_blank">
+                  <img src={WhatsAppImg} className="img-fluid" />
+                </a>
               </div>
             </div>
           </div>
@@ -47,7 +53,7 @@ function Contatos() {
           </div>
           <hr className="text-light mb-4" />
           <div className="col-md-7 col-lg-8">
-            <p className="font-footer">© Bia Neves Marcenaria Criativa, 2022. Todos os direitos reservados</p>
+            <p className="font-footer">© Bia Neves Marcenaria Criativa, 2022. Todos os direitos reservados.</p>
           </div>
         </div>
       </div>

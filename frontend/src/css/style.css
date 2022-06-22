@@ -64,7 +64,6 @@ html, body{
 
 .nav a {
   color: #404040;
-  /*ajustar aqui a formatacao da cor azul*/
 }
 
 .logo-nav {
@@ -76,19 +75,20 @@ html, body{
   background-color: #BF7960 !important;
 }
 
-/*Formatacao header - destaque */
-.sessao-destaque {
-  background-color: #F2F2F0 ;
-  text-align: center;
-  padding-bottom: 30px;
-}
-
 .nav-link:hover{
   color: #BF7960 !important;
 }
 
 .nav-link-ic:hover{
   color: #404040 !important;
+}
+
+
+/*Formatacao header - destaque */
+.sessao-destaque {
+  background-color: #F2F2F0 ;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
 .subtitulo {

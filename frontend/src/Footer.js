@@ -4,7 +4,7 @@ import Contatos from './sections/footer/contatos';
 
 function Footer() {
     return (
-        <footer className="">
+        <footer>
             <Contatos/>
         </footer>
     );
