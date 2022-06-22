@@ -7,7 +7,7 @@ function ThankYouPage() {
   return (
     <div className="thankyou-page">
         <div className="container">
-            <img src={Logo} className="box-logo-tnk" width="200px" alt="profile"/>
+            <img src={Logo} className="img-responsive img-fluid d-block" alt="profile"/>
         </div>
         <div className="container box-thankyou">
             <h4>Agradecemos pelo interesse nos produtos do <spam style={{fontWeight: 'bold'}}>Ateliê Bia Neves</spam>!</h4>

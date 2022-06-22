@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import logoarc from "../../img/imagens-main/logo-formulario1.png";
 import * as api from "../../services/Endpoints";
 
@@ -27,7 +28,8 @@ function Promocoes() {
       .catch((e) => {
         console.log(e);
       });
-      useNavigate("/thankyou",{ replace:true })
+      
+      <Navigate to="/thankyou" replace={true} />
   };
 
   return (

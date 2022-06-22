@@ -47,6 +47,14 @@
   padding: 20px 0px 20px 0px !important;
 }
 
+.logozap {
+  z-index: 10;
+  float: right;
+  position: fixed;
+  width: 20%;
+  margin-left: 36%;
+}
+
 .nav a {
   color: #404040;
   /*ajustar aqui a formatacao da cor azul*/
@@ -245,6 +253,21 @@ label input:checked ~ span {
   color: #f2f2f0 !important;
   padding: 10px 20px !important;
   text-align: center;
+  box-shadow: none !important;
+}
+
+.terms {
+  padding:20px;
+  font-size:18px;
+}
+
+.terms label{
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+}
+
+.form-img{
+  min-width: 400px;
 }
 
 /*Formatacao footer*/
@@ -266,10 +289,6 @@ label input:checked ~ span {
   height: 100vh;
   min-height: 100%;
   margin: auto;
-}
-
-.box-logo-tnk{
-  width: 30%;
 }
 
 .box-thankyou {
@@ -310,12 +329,6 @@ label input:checked ~ span {
 /*Formatacao - TELA HOME (Acesso Bia)*/
 
 /*Formatacao - TELA UPDATE (Acesso Bia)*/
-
-
-.terms {
-  padding:20px;
-  font-size:18px;
-}
 
 /* container */
 label {
