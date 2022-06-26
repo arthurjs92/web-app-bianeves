@@ -7,7 +7,7 @@ function Destaque() {
     <section className="sessao-destaque">
       <div className="container">
         <div className="row">
-          <div class="d-flex flex-wrap justify-content-center flex-row align-items-center">
+          <div className="d-flex flex-wrap justify-content-center flex-row align-items-center">
             <div className="box-logo flex-column col-xs-12 col-sm-12 col-md-12 col-lg-6">
               <img
                 src={Logo}

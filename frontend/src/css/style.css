@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet'); /*Volkov*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Volkhov&display=swap'); /*Poppins*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Volkhov&display=swap"); /*Poppins*/
 
 /* titulos: font-family: 'Volkhov', serif; */
 /* subtitulos: font-family: 'Poppins', sans-serif; */
@@ -7,9 +7,8 @@
 /* color: #BF7960 */
 /* color: #FFE7DB */
 
-
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0 auto;
   color: #404040;
   padding: 0;
@@ -18,25 +17,32 @@
   /* border: 1px solid black; */
 }
 
-html, body{
-  height:100%;
+html,
+body {
+  height: 100%;
 }
 
+.whats {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+}
 
 .titulo {
-  font-family: 'Volkhov', serif;
+  font-family: "Volkhov", serif;
   font-weight: bold;
-  text-align:left;
+  text-align: left;
 }
 
 .titulo-destaque {
-  font-family: 'Volkhov', serif;
+  font-family: "Volkhov", serif;
   font-weight: bold;
-  color: #BF7960;
+  color: #bf7960;
 }
 
 .frase-destaque {
-  color: #BF7960;
+  color: #bf7960;
 }
 
 .titulo-transver {
@@ -48,54 +54,75 @@ html, body{
   justify-content: center;
 }
 
-
 /*Formatacao header - navbar*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .navbar {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding: 20px 0px 20px 0px !important;
 }
 
-.whats{
-  position: fixed;
-  bottom: 30px;
-  right:30px;
-  z-index: 9999;
-  }
+.div-nav {
+  background-color: #fafafa;
+}
 
-.nav a {
+.nav link a {
   color: #404040;
+  opacity: 0.7;
 }
 
 .logo-nav {
   font-weight: bold;
-  font-family: 'Volkhov', serif;
+  font-family: "Volkhov", serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-left: 0px;
 }
 
 .botao {
-  background-color: #BF7960 !important;
+  border-radius: 10px;
+  margin-left:60px !important;
 }
 
-.nav-link:hover{
-  color: #BF7960 !important;
+.navbar-nav li a{
+  margin-left:20px !important;
 }
 
-.nav-link-ic:hover{
+.botao a {
+  background-color: #bf7960 !important;
+  opacity: 0.7;
+  padding: 20px;
+}
+
+.nav-link {
+  padding: 10px !important;
+  width: 150% !important;
+}
+
+.nav-link:hover {
+  color: #bf7960 !important;
+}
+
+.nav-link-ic:hover {
   color: #404040 !important;
 }
 
-
 /*Formatacao header - destaque */
 .sessao-destaque {
-  background-color: #F2F2F0 ;
+  background-color: #f2f2f0;
   text-align: center;
   padding-bottom: 30px;
 }
 
 .subtitulo {
-  background-color: #BF7960;
+  background-color: #bf7960;
   color: white;
-  box-shadow: 8px 5px 5px #E5E5E5;
-  font-weight:bold;
+  box-shadow: 8px 5px 5px #e5e5e5;
+  font-weight: bold;
   padding: 15px;
   border-radius: 10px;
   height: 4vmax 4vmin;
@@ -103,7 +130,7 @@ html, body{
   font-size: clamp(1em, 1em + 1vw, 1.3em);
 }
 
-.box-logo{
+.box-logo {
   margin-bottom: 40px;
   display: flex;
 }
@@ -112,13 +139,12 @@ html, body{
   border-radius: 0px 100px 0px 100px;
 }
 
-
 /*Formatacao main - seção Transver*/
-.sessao-transver h2{
+.sessao-transver h2 {
   margin-right: 50px;
 }
 
-.sessao-transver p{
+.sessao-transver p {
   margin: 36px;
 }
 
@@ -138,7 +164,7 @@ html, body{
   bottom: 0;
   right: 0;
   width: 100%;
-  height:90%;
+  height: 90%;
   padding: 10px;
 }
 
@@ -159,7 +185,7 @@ label input:checked ~ span {
   background-color: #bf7960 !important;
 }
 
-.video-producao{
+.video-producao {
   text-align: center;
   position: relative;
 }
@@ -176,7 +202,7 @@ label input:checked ~ span {
 /*Formatacao main - seção Sobre a Bia*/
 .sessao-sobre {
   padding: 50px 0px;
-  background-color: #FFE7DB;
+  background-color: #ffe7db;
   text-align: left;
 }
 
@@ -185,7 +211,7 @@ label input:checked ~ span {
 }
 
 .imagem-bia img {
-  text-align:center;
+  text-align: center;
   border-radius: 10px;
 }
 
@@ -204,19 +230,18 @@ label input:checked ~ span {
   padding: 10px;
 }
 
-.box-arvore  {
+.box-arvore {
   margin: 0px;
   text-align: left;
 }
 
-
 /*Formatacao main - seção Produtos*/
 
-.sessao-produtos{
+.sessao-produtos {
   padding: 50px 0px;
 }
 
-.width-img{
+.width-img {
   margin-top: 50px;
   border-radius: 20px;
 }
@@ -226,37 +251,36 @@ label input:checked ~ span {
   margin: 0px;
 }
 
-
 /*Formatacao main - seção Promoções*/
 
-.sessao-promocoes{
-  background-color: #ECECEC;
+.sessao-promocoes {
+  background-color: #ececec;
   padding: 50px 0px;
 }
 
-.bg-color{
-  background-color:#BF7960;
+.bg-color {
+  background-color: #bf7960;
   border-radius: 20px;
   margin-top: 40px;
 }
 
-.form-color{
+.form-color {
   background-color: #f2f2f0;
   padding: 40px 20px;
   border-radius: 20px;
   margin: 30px;
 }
 
-.padding-form{
-  padding:10px;
+.padding-form {
+  padding: 10px;
 }
 
-.form-btn{
+.form-btn {
   text-align: center;
 }
 
 .btn {
-	background-color: #BF7960 !important;
+  background-color: #bf7960 !important;
   color: #f2f2f0 !important;
   padding: 10px 20px !important;
   text-align: center;
@@ -264,16 +288,16 @@ label input:checked ~ span {
 }
 
 .terms {
-  padding:20px;
-  font-size:18px;
+  padding: 20px;
+  font-size: 18px;
 }
 
-.terms label{
-  font-family: 'Poppins', sans-serif;
+.terms label {
+  font-family: "Poppins", sans-serif;
   font-size: 12px;
 }
 
-.form-img{
+.form-img {
   min-width: 400px;
 }
 
@@ -286,12 +310,11 @@ label input:checked ~ span {
   color: #f2f2f0;
 }
 
-
 /* ////////////////////////// */
 
 /*Formatacao - THANK YOU PAGE*/
-.thankyou-page{
-  background-color: #FFE7DB;
+.thankyou-page {
+  background-color: #ffe7db;
   text-align: center;
   height: 100vh;
   min-height: 100%;
@@ -321,17 +344,16 @@ label input:checked ~ span {
 
 /*Formatacao - TELA LOGIN (Acesso Bia)*/
 .form-button {
-  background-color: #BF7960 !important;
+  background-color: #bf7960 !important;
   color: #fff;
   text-align: center;
 }
 
-.profile-image-pic{
+.profile-image-pic {
   height: 200px;
   width: 200px;
   object-fit: cover;
 }
-
 
 /*Formatacao - TELA HOME (Acesso Bia)*/
 
@@ -340,33 +362,33 @@ label input:checked ~ span {
 /* container */
 label {
   position: relative; /* to contain absolute elements */
-  padding-left:30px; /* free space for custom checkbox */
+  padding-left: 30px; /* free space for custom checkbox */
   cursor: pointer;
 }
 /* hide default checkbox  */
-label input[type=checkbox] {
+label input[type="checkbox"] {
   position: absolute; /* prevent taking any space */
   /* cross-browser hidingg */
-  width:0; 
-  height:0;
+  width: 0;
+  height: 0;
 }
 /* custom checkbox */
 label span {
   position: absolute;
   /* position to the free space in <label> */
-  top:0;
-  left:0;
-  width:20px; 
-  height:20px;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
   background-color: #ddd;
-  transition: .3s background-color; /* slight transition */
+  transition: 0.3s background-color; /* slight transition */
 }
 /* the check icon */
 label span:after {
   content: "";
   position: absolute;
   display: none;
-  
+
   /* check icon */
   left: 6px;
   top: 2px;
@@ -385,12 +407,5 @@ label input:checked ~ span {
   background-color: #2eaadc;
 }
 label input:checked ~ span:after {
-  display:block;
+  display: block;
 }
-
-
-
-
-
-
-

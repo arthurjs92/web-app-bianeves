@@ -14,7 +14,7 @@ function Produtos() {
   return (
     <section className="sessao-produtos">
 
-      <div class="container d-flex  flex-row  flex-wrap div-margin">
+      <div className="container d-flex  flex-row  flex-wrap div-margin">
         <div className="row align-items-center">
           <div className="flex-column div-logo w-25 d-none d-md-block col-md-2 col-lg-3">
             <img src={CompanyLogo} className="img-responsive img-rounded img-fluid" alt="Logo Bia" />
