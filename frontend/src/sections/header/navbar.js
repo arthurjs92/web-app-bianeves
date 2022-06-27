@@ -6,7 +6,7 @@ function Navbar() {
         <nav className="container navbar navbar-expand-lg navbar-light bg-light nav nav-pills nav-fill">
           <div className="container-fluid">
 
-              <a className="navbar-brand logo-nav" href="#sessao-destaque">
+              <a className="navbar-brand logo-nav nav-link-logo" href="#sessao-destaque">
                   Bia Neves
               </a>
 

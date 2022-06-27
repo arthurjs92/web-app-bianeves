@@ -1,12 +1,14 @@
-import React from 'react';
-import './css/style.css';
+import React from "react";
+import NavbarHome from "./sections/header/navbar-home"
+import HomeForm from "./sections/main/homeForm";
 
 function Home() {
-  return (
-    <div>
-
-    </div>
-  );
+        return (
+            <div>
+                <NavbarHome/>
+                <HomeForm/>
+            </div>
+        );
 }
 
 export default Home;

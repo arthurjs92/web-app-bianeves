@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { Navigate } from "react-router-dom";
 import logoarc from "../../img/imagens-main/logo-formulario1.png";
 import * as api from "../../services/Endpoints";
+import {Link} from "react-router-dom";
 
 function Promocoes() {
   const estadoInicial = {
@@ -25,12 +24,10 @@ function Promocoes() {
       .then((response) => {
         console.log(response);
         window.location.href = "/thankyou";
-
       })
       .catch((e) => {
         console.log(e);
       });
-      
   };
 
   return (
@@ -53,7 +50,7 @@ function Promocoes() {
         </div>
 
         <div className="flex-column col-md-6 col-lg-6 ">
-          <div className="form-horizontal form-color col-xs-3">
+          <form className="form-horizontal form-color col-xs-3" name="formulario">
             <div className="form-group row padding-form">
               <div className="col form-group">
                 <input
@@ -111,21 +108,26 @@ function Promocoes() {
               </div>
               <div className="terms">
                 <label>
-                  Eu li e concordo com os termos de uso.
-                  <input type="checkbox" />
+                  Eu li e concordo com os <u>termos de uso.</u>
+                  <input
+                    type="checkbox"
+                    className="form-check-input"
+                    required
+                    name="termos"
+                  />
                   <span></span>
                 </label>
               </div>
             </div>
             <div className="form-group form-btn">
-              <button
+              <button 
                 className="btn btn-default button-adjust"
                 onClick={enviarDados}
               >
                 Enviar
               </button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>

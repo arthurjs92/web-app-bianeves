@@ -89,7 +89,6 @@ nav {
 
 .botao a {
   background-color: #bf7960 !important;
-  opacity: 0.7;
   padding: 20px;
 }
 
@@ -102,8 +101,12 @@ nav {
   color: #bf7960 !important;
 }
 
+.nav-link-logo:hover {
+  color: #bf7960 !important;
+}
+
 .nav-link-ic:hover {
-  color: #404040 !important;
+  color: white !important;
 }
 
 /*Formatacao header - destaque */
@@ -116,7 +119,7 @@ nav {
 .subtitulo {
   background-color: #bf7960;
   color: white;
-  box-shadow: 8px 5px 5px #e5e5e5;
+  /* box-shadow: 8px 5px 5px #e5e5e5; */
   font-weight: bold;
   padding: 15px;
   border-radius: 10px;
@@ -351,6 +354,10 @@ label input:checked ~ span {
 }
 
 /*Formatacao - TELA HOME (Acesso Bia)*/
+
+.col-logout {
+  text-align-last: end !important;
+}
 
 /*Formatacao - TELA UPDATE (Acesso Bia)*/
 
