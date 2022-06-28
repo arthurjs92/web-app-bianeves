@@ -71,6 +71,7 @@ function Promocoes() {
                   {...register("nome", {required: true, minLength: 2, maxLength: 25})}
                   type="text"
                   className="form-control"
+                  placeholder="Nome"
                 />
               </div>
             </div>
@@ -79,6 +80,8 @@ function Promocoes() {
                 <input
                   {...register("telefone", {required: true, minLength: 11, maxLength: 13, pattern: /^\([0-9]{2}\) [0-9]{5}-[0-9]{4}$/})}
                   type="tel"
+                  className="form-control"
+                  placeholder="Telefone"
                   />
               </div>
             </div>
@@ -88,6 +91,7 @@ function Promocoes() {
                   {...register('email', { required: true, pattern: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/})}
                   type="email"
                   className="form-control"
+                  placeholder="E-mail"
                 />
               </div>
               <div className="terms">
