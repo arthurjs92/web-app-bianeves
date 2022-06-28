@@ -30,7 +30,7 @@ public class ClientService {
     }
 
     public Client update(Long id, Client client){
-        client.setId(id);
+        client.setId_client(id);
         return clientRepository.save(client);
     }
 }

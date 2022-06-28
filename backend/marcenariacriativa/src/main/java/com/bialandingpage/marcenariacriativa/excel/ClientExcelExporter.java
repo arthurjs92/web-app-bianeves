@@ -69,7 +69,7 @@ public class ClientExcelExporter {
             Row row = sheet.createRow(rowCount++);
             int columnCount = 0;
 
-            createCell(row, columnCount++, client.getId(), style);
+            createCell(row, columnCount++, client.getId_client(), style);
             createCell(row, columnCount++, client.getNome(), style);
             createCell(row, columnCount++, client.getCidade(), style);
             createCell(row, columnCount++, client.getTelefone(), style);

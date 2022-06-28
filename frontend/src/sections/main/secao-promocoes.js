@@ -17,13 +17,28 @@ function Promocoes() {
     setDados({ ...dados, [name]: value });
   };
 
+  const validarEnviar = () => {
+    validarData();
+    enviarDados();
+  }
+
+  const validarData = () =>{
+    if(dados.nome > 2){
+      if(dados.telefone.length >= 11 && dados.telefone.length < 13){
+        if(dados.email){
+
+        }
+      }
+    }
+  }
+
   const enviarDados = () => {
     console.log(dados);
     api
       .create(dados)
       .then((response) => {
         console.log(response);
-        window.location.href = "/thankyou";
+        window.location.href="/thankyou";
       })
       .catch((e) => {
         console.log(e);
@@ -50,7 +65,7 @@ function Promocoes() {
         </div>
 
         <div className="flex-column col-md-6 col-lg-6 ">
-          <form className="form-horizontal form-color col-xs-3" name="formulario">
+          <div className="form-horizontal form-color col-xs-3" name="formulario">
             <div className="form-group row padding-form">
               <div className="col form-group">
                 <input
@@ -122,12 +137,12 @@ function Promocoes() {
             <div className="form-group form-btn">
               <button 
                 className="btn btn-default button-adjust"
-                onClick={enviarDados}
+                onClick={validarEnviar}
               >
                 Enviar
               </button>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </section>

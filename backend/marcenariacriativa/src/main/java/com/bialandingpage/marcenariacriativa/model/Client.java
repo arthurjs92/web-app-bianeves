@@ -20,7 +20,7 @@ public class Client {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long id_client;
 
     @NotBlank(message = "{NotBlank.Client.Nome}")
     @Size(min = 2, max = 255, message = "{Size.Client.Nome}")

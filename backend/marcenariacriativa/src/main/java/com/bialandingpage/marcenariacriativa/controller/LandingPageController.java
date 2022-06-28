@@ -13,6 +13,7 @@ import com.bialandingpage.marcenariacriativa.model.Client;
 import com.bialandingpage.marcenariacriativa.service.ClientService;
 
 @RestController
+@CrossOrigin
 public class LandingPageController {
 
     @Autowired

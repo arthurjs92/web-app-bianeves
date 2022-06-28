@@ -10,7 +10,7 @@ function ThankYouPage() {
             <img src={Logo} className="img-responsive img-fluid d-block" alt="profile"/>
         </div>
         <div className="container box-thankyou">
-            <h4>Agradecemos pelo interesse nos produtos do <spam style={{fontWeight: 'bold'}}>Ateliê Bia Neves</spam>!</h4>
+            <h4>Agradecemos pelo interesse nos produtos do <span style={{fontWeight: 'bold'}}>Ateliê Bia Neves</span>!</h4>
             <h4 className="frase-destaque">Retornaremos o contato o mais breve possível.</h4>
         </div>
         <div className="container box-redessociais">

@@ -1,6 +1,6 @@
 import React from "react";
 import NavbarHome from "./sections/header/navbar-home"
-import HomeForm from "./sections/main/homeForm";
+import HomeForm from "./sections/main/home-form";
 
 function Home() {
         return (

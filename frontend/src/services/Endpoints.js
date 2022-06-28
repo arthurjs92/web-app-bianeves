@@ -8,11 +8,11 @@ const httpClient = axios.create({
 })
 
 export const getAll = () => {
-  return httpClient.get("/admin/clientes");
+  return httpClient.get("/home/clientes", { headers: { Authorization: "Bearer " + localStorage.getItem("jwtToken") } });
 };
 
-export const get = id => {
-  return httpClient.get(`/admin/clientes/${id}`);
+export const get = nome => {
+  return httpClient.get(`/home/clientes/${nome}`,{});
 };
 
 export const create = data => {
@@ -20,13 +20,13 @@ export const create = data => {
 };
 
 export const update = (id, data) => {
-  return httpClient.put(`/admin/clientes/${id}`, data);
+  return httpClient.put(`/home/clientes/${id}`, data);
 };
 
 export const remove = id => {
-  return httpClient.delete(`/admin/clientes/${id}`);
+  return httpClient.delete(`/home/clientes/${id}`);
 };
 
 export const exportExcel = () =>{
-    return httpClient.get(`/admin/clientes/export/excel`);
+    return httpClient.get(`/home/clientes/export/excel`);
 }

@@ -6,7 +6,7 @@ function Navbar() {
       <nav className="container navbar navbar-expand-lg navbar-light bg-light nav nav-pills nav-fill">
         <div className="container-fluid">
           <a
-            className="navbar-brand logo-nav nav-link-logo"
+            className="navbar-brand logo-nav nav-link-logo nav-home"
             href="#sessao-destaque"
           >
             Bia Neves
@@ -24,8 +24,8 @@ function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="container collapse navbar-collapse" id="menu-ancora">
-            <div className="col-logout">
+          <div className="container collapse navbar-collapse col-logout" id="menu-ancora">
+            <div className="col col-logout">
               <ul className="navbar-nav mb-lg-0">
                 <li className="nav-item">
                   <a className="nav-link" href="#sessao-inicial">
