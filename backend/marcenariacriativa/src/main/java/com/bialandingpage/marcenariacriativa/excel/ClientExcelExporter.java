@@ -71,7 +71,6 @@ public class ClientExcelExporter {
 
             createCell(row, columnCount++, client.getId_client(), style);
             createCell(row, columnCount++, client.getNome(), style);
-            createCell(row, columnCount++, client.getCidade(), style);
             createCell(row, columnCount++, client.getTelefone(), style);
             createCell(row, columnCount++, client.getEmail(), style);
         }

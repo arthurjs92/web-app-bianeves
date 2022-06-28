@@ -27,6 +27,22 @@ export const remove = id => {
   return httpClient.delete(`/home/clientes/${id}`);
 };
 
-export const exportExcel = () =>{
-    return httpClient.get(`/home/clientes/export/excel`);
-}
+export const exportExcel = () => {
+  return httpClient.get("/home/clientes/export/excel", {
+    responseType: "blob",
+    headers: { Authorization: "Bearer " + localStorage.getItem("jwtToken") },
+  });
+};
+
+export const login = (data) => {
+  return httpClient.post(
+    "/login",
+    {},
+    {
+      auth: {
+        username: data.nome,
+        password: data.senha,
+      },
+    }
+  );
+};

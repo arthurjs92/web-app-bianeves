@@ -26,8 +26,6 @@ public class Client {
     @Size(min = 2, max = 255, message = "{Size.Client.Nome}")
     private String nome;
 
-    private String cidade;
-
     @NotBlank(message = "{NotBlank.Client.Email}")
     @Email
     private String email;

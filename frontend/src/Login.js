@@ -1,8 +1,45 @@
-import React from 'react';
-import './css/style.css';
-import Logo from './img/imagens-header/logo-principal.png';
+import "./css/style.css";
+import Logo from "./img/imagens-header/logo-principal.png";
+import { useState, useEffect } from "react";
+import * as api from "../src/services/Endpoints";
 
-function Login() {
+const Login = ({ setLogged }) => {
+  const estadoInicial = {
+    nome: "",
+    senha: "",
+  };
+
+  const [user, setUser] = useState(estadoInicial);
+  const [erro, setErro] = useState("");
+
+  const trataCampo = (event) => {
+    const { name, value } = event.target;
+    setUser({ ...user, [name]: value });
+  };
+
+  // useEffect(() => {
+  //   console.log("useEffect (" + localStorage.getItem("jwtToken") + ")");
+  //   if (localStorage.getItem("jwtToken") !== null) setLogged(true);
+  //   else setLogged(false);
+  // }, []);
+
+  const logar = (event) => {
+    event.preventDefault();
+    console.log(user);
+    api
+      .login(user)
+      .then((response) => {
+        setLogged(true);
+        console.log(response.data);
+        localStorage.setItem("jwtToken", response.data);
+        setErro("");
+      })
+      .catch((e) => {
+        console.log("Erro: -------------------------- " + e);
+        setErro("Usuário e/ou senha incorreto(s)");
+      });
+  };
+
   return (
     <div className="container">
       <div className="row">
@@ -12,28 +49,53 @@ function Login() {
 
           <div className="card my-5">
             <form className="card-body cardbody-color p-lg-5">
-
               <div className="text-center">
-                <img src={Logo} className="img-fluid profile-image-pic  my-3" width="200px" alt="profile" />
+                <img
+                  src={Logo}
+                  className="img-fluid profile-image-pic  my-3"
+                  width="200px"
+                  alt="profile"
+                />
               </div>
 
               <div className="mb-3">
-                <input type="email" className="form-control" id="Username" aria-describedby="emailHelp"
-                  placeholder="E-mail" required />
+                <input
+                  type="email"
+                  className="form-control"
+                  id="nome"
+                  required
+                  value={user.nome}
+                  onChange={trataCampo}
+                  name="nome"
+                  placeholder="E-mail"
+                />
               </div>
               <div className="mb-3">
-                <input type="password" className="form-control" id="password" placeholder="Senha" required />
+                <input
+                  type="password"
+                  className="form-control"
+                  id="senha"
+                  required
+                  value={user.senha}
+                  onChange={trataCampo}
+                  name="senha"
+                  placeholder="Senha"
+                />
               </div>
 
-              <button type="submit" className="btn form-button px-5 mb-5 w-100 shadow rounded">Entrar</button>
-
+              <button
+                type="submit"
+                className="btn form-button px-5 mb-5 w-100 shadow rounded"
+                onClick={logar}
+              >
+                Entrar
+              </button>
             </form>
           </div>
-
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Login;

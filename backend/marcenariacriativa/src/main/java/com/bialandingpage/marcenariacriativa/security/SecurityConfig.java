@@ -6,6 +6,7 @@ import java.security.interfaces.RSAPublicKey;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -43,15 +44,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         http
                 .cors().and()
-                .authorizeHttpRequests().antMatchers("/client").permitAll()
-                .anyRequest().authenticated().and()
-                .csrf((csrf) -> csrf.ignoringAntMatchers("/login","/client"))
+                .csrf((csrf) -> csrf.ignoringAntMatchers("/login", "/home"))
                 .httpBasic(Customizer.withDefaults())
                 .oauth2ResourceServer(OAuth2ResourceServerConfigurer::jwt)
                 .sessionManagement((session) -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                .authorizeHttpRequests((authorize) -> authorize
+                        .antMatchers(HttpMethod.POST, "/home").permitAll()
+                        .anyRequest().authenticated())
                 .exceptionHandling((exceptions) -> exceptions
                         .authenticationEntryPoint(new BearerTokenAuthenticationEntryPoint())
-                        .accessDeniedHandler(new BearerTokenAccessDeniedHandler()));
+                        .accessDeniedHandler(new BearerTokenAccessDeniedHandler())
+
+                );
     }
 
     @Bean

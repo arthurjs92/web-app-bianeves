@@ -10,7 +10,7 @@ function HomeForm() {
   }, []);
 
   const receivedData = () => {
-    if(data == ""){
+    if(data === ""){
       api
       .getAll()
       .then((response) => {

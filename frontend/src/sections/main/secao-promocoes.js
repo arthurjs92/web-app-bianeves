@@ -1,48 +1,44 @@
 import React, { useState } from "react";
 import logoarc from "../../img/imagens-main/logo-formulario1.png";
 import * as api from "../../services/Endpoints";
-import {Link} from "react-router-dom";
+import { useForm } from "react-hook-form";
 
 function Promocoes() {
+
+  const { register, handleSubmit } = useForm();
+  // const onSubmit = data => console.log(data);
+
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   watch,
+  //   formState: { errors },
+  // } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+    api
+      .create(dados)
+      .then((response) => {
+        console.log(response);
+        window.location.href = "/thankyou";
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  };
+
   const estadoInicial = {
     nome: "",
-    cidade: "",
     email: "",
     telefone: "",
   };
+
   const [dados, setDados] = useState(estadoInicial);
 
   const trataCampo = (event) => {
     const { name, value } = event.target;
     setDados({ ...dados, [name]: value });
-  };
-
-  const validarEnviar = () => {
-    validarData();
-    enviarDados();
-  }
-
-  const validarData = () =>{
-    if(dados.nome > 2){
-      if(dados.telefone.length >= 11 && dados.telefone.length < 13){
-        if(dados.email){
-
-        }
-      }
-    }
-  }
-
-  const enviarDados = () => {
-    console.log(dados);
-    api
-      .create(dados)
-      .then((response) => {
-        console.log(response);
-        window.location.href="/thankyou";
-      })
-      .catch((e) => {
-        console.log(e);
-      });
   };
 
   return (
@@ -65,84 +61,51 @@ function Promocoes() {
         </div>
 
         <div className="flex-column col-md-6 col-lg-6 ">
-          <div className="form-horizontal form-color col-xs-3" name="formulario">
+        <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="form-horizontal form-color col-xs-3"
+          >
             <div className="form-group row padding-form">
               <div className="col form-group">
                 <input
+                  {...register("nome", {required: true, minLength: 2, maxLength: 25})}
                   type="text"
                   className="form-control"
-                  id="inputNome"
-                  placeholder="Nome"
-                  required
-                  value={dados.nome}
-                  onChange={trataCampo}
-                  name="nome"
                 />
               </div>
             </div>
             <div className="form-group row padding-form">
               <div className="col form-group">
                 <input
+                  {...register("telefone", {required: true, minLength: 11, maxLength: 13, pattern: /^\([0-9]{2}\) [0-9]{5}-[0-9]{4}$/})}
                   type="tel"
-                  className="form-control"
-                  id="inputPassword"
-                  placeholder="Telefone"
-                  required
-                  value={dados.telefone}
-                  onChange={trataCampo}
-                  name="telefone"
-                />
+                  />
               </div>
             </div>
             <div className="form-group row padding-form">
               <div className="col form-group">
                 <input
+                  {...register('email', { required: true, pattern: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/})}
                   type="email"
                   className="form-control"
-                  id="inputPassword"
-                  placeholder="E-mail"
-                  required
-                  value={dados.email}
-                  onChange={trataCampo}
-                  name="email"
-                />
-              </div>
-            </div>
-            <div className="form-group row padding-form">
-              <div className="col form-group">
-                <input
-                  type="text"
-                  className="form-control"
-                  id="inputCidade"
-                  placeholder="Cidade"
-                  required
-                  value={dados.cidade}
-                  onChange={trataCampo}
-                  name="cidade"
                 />
               </div>
               <div className="terms">
                 <label>
                   Eu li e concordo com os <u>termos de uso.</u>
                   <input
+                    {...register('checkbox', { required: true })}
                     type="checkbox"
                     className="form-check-input"
-                    required
-                    name="termos"
                   />
                   <span></span>
                 </label>
               </div>
             </div>
             <div className="form-group form-btn">
-              <button 
-                className="btn btn-default button-adjust"
-                onClick={validarEnviar}
-              >
-                Enviar
-              </button>
+              <input type="submit"/>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>

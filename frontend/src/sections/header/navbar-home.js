@@ -1,6 +1,15 @@
-import React from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import Login from "../../Login";
 
-function Navbar() {
+const NavBar = ({ submitted, setSubmitted }) => {
+
+  const logout = () => {
+    console.log("saindo ....");
+    localStorage.removeItem("jwtToken");
+    setSubmitted(false);
+  };
+
   return (
     <div className="div-nav">
       <nav className="container navbar navbar-expand-lg navbar-light bg-light nav nav-pills nav-fill">
@@ -24,21 +33,28 @@ function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="container collapse navbar-collapse col-logout" id="menu-ancora">
-            <div className="col col-logout">
-              <ul className="navbar-nav mb-lg-0">
-                <li className="nav-item">
-                  <a className="nav-link" href="#sessao-inicial">
-                    Logout
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <div
+            className="container collapse navbar-collapse col-logout"
+            id="menu-ancora"
+          >
+            {submitted ? (
+              <div className="col col-logout">
+                <ul className="navbar-nav mb-lg-0">
+                  <li className="nav-item">
+                    <Link onClick={logout} className="nav-link" to={""}>
+                      Sair
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            ) : (
+              <Login setSubmitted={setSubmitted} />
+            )}
           </div>
         </div>
       </nav>
     </div>
   );
-}
+};
 
-export default Navbar;
+export default NavBar;
