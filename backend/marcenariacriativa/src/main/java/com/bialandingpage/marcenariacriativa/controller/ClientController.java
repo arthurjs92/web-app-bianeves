@@ -24,7 +24,7 @@ import com.bialandingpage.marcenariacriativa.model.Client;
 import com.bialandingpage.marcenariacriativa.service.ClientService;
 
 @RestController
-@RequestMapping("/admin")
+@RequestMapping("/home")
 @CrossOrigin
 public class ClientController {
 
