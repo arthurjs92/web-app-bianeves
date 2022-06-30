@@ -135,7 +135,6 @@ export default function Promocoes() {
                     onClick={() => {
                       setDados({ ...dados, checkbox: true });
                     }}
-                    className="form-control"
                     type="checkbox"
                   />
                   <span></span>

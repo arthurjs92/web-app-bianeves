@@ -4,7 +4,9 @@ import FileDownload from "js-file-download";
 import Logo from "../../img/imagens-header/logo-principal.png";
 
 export default function HomeForm() {
-  const [data, setDados] = useState([]);
+  
+  const [data, setData] = useState([]);
+  const [searchValue, setSearchValue] = useState("");
 
   useEffect(() => {
     receivedData();
@@ -12,7 +14,6 @@ export default function HomeForm() {
 
   const exportExcel = () => {
     api.exportExcel().then((response) => {
-      console.log(response);
       FileDownload(response.data, "clientes.xlsx");
     });
   };
@@ -21,23 +22,17 @@ export default function HomeForm() {
     api
       .getAll()
       .then((response) => {
-        setDados(response.data);
-        console.log("---------------------", response.data);
+        setData(response.data);
       })
       .catch((e) => {
         console.log(e);
       });
   };
 
-  const trataCampo = (event) => {
-    const { name, value } = event.target;
-    setDados({ ...data, [name]: value });
-  };
-
   return (
     <div>
       {data.length === 0 ? (
-        <p>carregando dados ...</p>
+        <p className="text-center">Carregando dados ...</p>
       ) : (
         <div className="col-xs-4 col-sm-8 col-md-8 col-lg-4">
           <div className="text-center">
@@ -51,17 +46,15 @@ export default function HomeForm() {
             <input
               type="search"
               className="form-control rounded"
-              placeholder="Buscar"
+              placeholder="Digite um nome"
               aria-label="Buscar"
               aria-describedby="search-addon"
-              onChange={trataCampo}
-              value={data.nome}
+              onChange={(texto) => setSearchValue(texto.target.value)}
               name="nome"
             />
             <button
               type="button"
               className="btn-home btn btn-outline-primary"
-              onClick={receivedData}
             >
               Buscar
             </button>
@@ -77,15 +70,20 @@ export default function HomeForm() {
               </tr>
             </thead>
             <tbody>
-              {data.map((data, key) => (
-                <tr scope="row" key={key}>
-                  <td>{data.id}</td>
-                  <td>{data.nome}</td>
-                  <td>{data.telefone}</td>
-                  <td>{data.email}</td>
-                  <td>{data.data}</td>
-                </tr>
-              ))}
+              
+              {data.map((data, key) => {
+                
+                if(data.nome.includes(searchValue)) {
+                  return (
+                    <tr scope="row" key={key}>
+                      <td>{data.id}</td>
+                      <td>{data.nome}</td>
+                      <td>{data.telefone}</td>
+                      <td>{data.email}</td>
+                      <td>{data.data}</td>
+                    </tr>
+                  )}
+              })}
             </tbody>
           </table>
           <div className="text-center">

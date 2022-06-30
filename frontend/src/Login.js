@@ -25,18 +25,18 @@ const Login = ({ setLogged }) => {
 
   const logar = (event) => {
     event.preventDefault();
-    console.log(user);
     api
       .login(user)
       .then((response) => {
         setLogged(true);
-        console.log(response.data);
         localStorage.setItem("jwtToken", response.data);
         setErro("");
       })
       .catch((e) => {
-        console.log("Erro: -------------------------- " + e);
+        // console.log("Erro: -------------------------- " + e);
         setErro("Usuário e/ou senha incorreto(s)");
+        alert(erro);
+
       });
   };
 
