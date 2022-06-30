@@ -5,7 +5,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
-import com.bialandingpage.marcenariacriativa.model.User;
+import com.bialandingpage.marcenariacriativa.model.UserAdmin;
 import com.bialandingpage.marcenariacriativa.repository.UserRepository;
 
 public class MyUserDetailsService implements UserDetailsService {
@@ -15,7 +15,7 @@ public class MyUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User usuario = usuarioRepository.findByUsername(username);
+        UserAdmin usuario = usuarioRepository.findByUsername(username);
         if (usuario == null) {
             throw new UsernameNotFoundException("User not found");
         }

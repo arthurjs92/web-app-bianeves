@@ -28,7 +28,7 @@ function Produtos() {
                   </h2>
                 </div>
                 <div className="box-madeira align-self-end">
-                  <img src={LogoMadeira} className="img-responsive"/>
+                  <img src={LogoMadeira} className="img-responsive" alt=""/>
                 </div>
               </div>
               <div className="justify-content-start">

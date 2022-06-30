@@ -5,8 +5,6 @@ import java.io.IOException;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bialandingpage.marcenariacriativa.model.Client;
-
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.Row;
@@ -14,14 +12,16 @@ import org.apache.poi.xssf.usermodel.XSSFFont;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import com.bialandingpage.marcenariacriativa.model.UserClient;
+
 @SuppressWarnings("UnusedAssignment")
 public class ClientExcelExporter {
     private final XSSFWorkbook workbook;
     private XSSFSheet sheet;
-    private final Iterable<Client> listClients;
+    private final Iterable<UserClient> listCliente;
 
-    public ClientExcelExporter(Iterable<Client> listClients) {
-        this.listClients = listClients;
+    public ClientExcelExporter(Iterable<UserClient> listCliente) {
+        this.listCliente = listCliente;
         workbook = new XSSFWorkbook();
     }
 
@@ -38,9 +38,9 @@ public class ClientExcelExporter {
 
         createCell(row, 0, "Cliente ID", style);
         createCell(row, 1, "Nome Completo", style);
-        createCell(row, 2, "Cidade", style);
+        createCell(row, 2, "E-mail", style);
         createCell(row, 3, "Telefone", style);
-        createCell(row, 4, "E-mail", style);
+        createCell(row, 4, "Cadastro", style);
 
     }
 
@@ -65,14 +65,15 @@ public class ClientExcelExporter {
         font.setFontHeight(14);
         style.setFont(font);
 
-        for (Client client : listClients) {
+        for (UserClient client : listCliente) {
             Row row = sheet.createRow(rowCount++);
             int columnCount = 0;
 
-            createCell(row, columnCount++, client.getId_client(), style);
+            createCell(row, columnCount++, client.getId(), style);
             createCell(row, columnCount++, client.getNome(), style);
-            createCell(row, columnCount++, client.getTelefone(), style);
             createCell(row, columnCount++, client.getEmail(), style);
+            createCell(row, columnCount++, client.getTelefone(), style);
+            createCell(row, columnCount++, client.getData().toString(), style);
         }
     }
 

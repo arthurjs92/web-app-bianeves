@@ -12,6 +12,7 @@ function Sobre() {
             <img
               src={ImagemArvore}
               className="img-responsive img-rounded img-fluid"
+              alt=""
             />
           </div>
           <div className="col align-self-end titulo-bia-desc">
@@ -42,6 +43,7 @@ function Sobre() {
             <img
               src={ImagemBia}
               className="img-responsive img-rounded img-fluid"
+              alt=""
             />
           </div>
 

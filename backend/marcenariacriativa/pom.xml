@@ -8,10 +8,10 @@
         <version>2.6.7</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.mymitra</groupId>
-    <artifactId>mitra</artifactId>
+    <groupId>com.bialandingpage</groupId>
+    <artifactId>marcenariacriativa</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>mitra</name>
+    <name>bialandingpage</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>8</java.version>

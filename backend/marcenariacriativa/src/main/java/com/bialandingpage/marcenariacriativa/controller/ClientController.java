@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.bialandingpage.marcenariacriativa.excel.ClientExcelExporter;
-import com.bialandingpage.marcenariacriativa.model.Client;
+import com.bialandingpage.marcenariacriativa.model.UserClient;
 import com.bialandingpage.marcenariacriativa.service.ClientService;
 
 @RestController
@@ -32,23 +32,23 @@ public class ClientController {
     ClientService clientService;
 
     @GetMapping("/clientes/{nome}")
-    public ResponseEntity<Client> getClienteByNome(@PathVariable String nome){
+    public ResponseEntity<UserClient> getClienteByNome(@PathVariable String nome){
         return ResponseEntity.ok().body(clientService.findByNome(nome));
     }
 
     @GetMapping("/clientes")
-    public ResponseEntity<Iterable<Client>> getAllClientes(){
+    public ResponseEntity<Iterable<UserClient>> getAllClientes(){
         return ResponseEntity.ok().body(clientService.findAll());
     }
 
     @DeleteMapping("/clientes/{id}")
-    public ResponseEntity<Client> deleteClient(@PathVariable Long id){
+    public ResponseEntity<UserClient> deleteClient(@PathVariable Long id){
         clientService.delete(id);
         return ResponseEntity.status(HttpStatus.OK).build();
     }
 
     @PutMapping("/clientes/{id}")
-    public ResponseEntity<Client> updateClient(@PathVariable Long id, @RequestBody Client client){
+    public ResponseEntity<UserClient> updateClient(@PathVariable Long id, @RequestBody UserClient client){
         return ResponseEntity.ok().body(clientService.update(id, client));
     }
 
@@ -62,7 +62,7 @@ public class ClientController {
         String headerValue = "attachment; filename=clientes_" + currentDateTime + ".xlsx";
         response.setHeader(headerKey, headerValue);
 
-        Iterable<Client> listClients = clientService.findAll();
+        Iterable<UserClient> listClients = clientService.findAll();
 
         ClientExcelExporter excelExporter = new ClientExcelExporter(listClients);
 

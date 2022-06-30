@@ -1,14 +1,14 @@
 package com.bialandingpage.marcenariacriativa.repository;
 
-import com.bialandingpage.marcenariacriativa.model.Client;
-
 import org.springframework.data.domain.Sort;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-@Repository
-public interface ClientRepository extends CrudRepository<Client,Long>{
-    Client findByNome(String nome);
+import com.bialandingpage.marcenariacriativa.model.UserClient;
 
-    Iterable<Client> findAll(Sort email);
+@Repository
+public interface ClientRepository extends CrudRepository<UserClient,Long>{
+    UserClient findByNome(String nome);
+
+    Iterable<UserClient> findAll(Sort email);
 }

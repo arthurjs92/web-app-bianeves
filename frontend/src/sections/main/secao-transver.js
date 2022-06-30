@@ -7,7 +7,7 @@ function Transver() {
     <div className="container sessao-transver ">
       <div className="row box-imagem-produto">
         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 imagem-principal-produtos">
-          <img src={ImagemProdutos} className="img-responsive img-fluid d-block"/>
+          <img src={ImagemProdutos} className="img-responsive img-fluid d-block" alt=''/>
         </div>
         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
           <h2 className="titulo titulo-transver" id="sessao-inicial">O transver através das <span className="titulo-destaque">transformações da natureza</span></h2>

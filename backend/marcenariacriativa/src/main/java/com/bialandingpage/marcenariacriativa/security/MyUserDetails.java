@@ -5,13 +5,13 @@ import java.util.Collection;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.bialandingpage.marcenariacriativa.model.User;
+import com.bialandingpage.marcenariacriativa.model.UserAdmin;
 
 public class MyUserDetails implements UserDetails {
 
-    private User usuario;
+    private UserAdmin usuario;
 
-    public MyUserDetails(User user) {
+    public MyUserDetails(UserAdmin user) {
         this.usuario = user;
     }
 

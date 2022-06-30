@@ -44,12 +44,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         http
                 .cors().and()
-                .csrf((csrf) -> csrf.ignoringAntMatchers("/login", "/home"))
+                .csrf((csrf) -> csrf.ignoringAntMatchers("/login", "/home", "/client"))
                 .httpBasic(Customizer.withDefaults())
                 .oauth2ResourceServer(OAuth2ResourceServerConfigurer::jwt)
                 .sessionManagement((session) -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests((authorize) -> authorize
-                        .antMatchers(HttpMethod.POST, "/home").permitAll()
+                        .antMatchers(HttpMethod.POST, "/home", "/client").permitAll()
                         .anyRequest().authenticated())
                 .exceptionHandling((exceptions) -> exceptions
                         .authenticationEntryPoint(new BearerTokenAuthenticationEntryPoint())
