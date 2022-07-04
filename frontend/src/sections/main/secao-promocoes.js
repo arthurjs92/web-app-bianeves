@@ -138,6 +138,7 @@ export default function Promocoes() {
                     type="checkbox"
                   />
                   <span></span>
+                  <p>{errors.checkbox?.message}</p>
                 </label>
               </div>
             </div>

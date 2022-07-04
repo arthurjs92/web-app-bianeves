@@ -293,7 +293,6 @@ label input:checked ~ span {
 }
 
 .terms {
-  padding: 20px;
   font-size: 18px;
 }
 
@@ -313,6 +312,15 @@ label input:checked ~ span {
 
 .font-footer {
   color: #f2f2f0;
+}
+
+.footer-home{
+  padding:20px !important;
+  margin-top: 40px !important;
+  bottom: 0;
+  position: fixed;
+  width: 90%;
+  text-align: center;
 }
 
 /* ////////////////////////// */
@@ -374,7 +382,12 @@ label input:checked ~ span {
   color: #404040 !important;
 }
 
+.search-bar{
+  width: 50px !important;
+}
+
 /*Formatacao - TELA UPDATE (Acesso Bia)*/
+
 
 /* container */
 label {
