@@ -1,6 +1,6 @@
 import React from "react";
 import NavbarHome from "./sections/header/NavbarHome";
-import HomeForm from "./sections/main/home-form";
+import HomeForm from "./sections/main/HomeForm";
 import Login from "../src/Login";
 
 function Home({ logged, setLogged }) {

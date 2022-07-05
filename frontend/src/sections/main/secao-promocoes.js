@@ -66,6 +66,14 @@ export default function Promocoes() {
       });
   };
 
+  const acessaPolitica = () => {
+    window.open("/politica-de-privacidade","_blank");
+  }
+
+  const acessaTermos = () => {
+    window.open("/termos-de-uso","_blank");
+  }
+
   return (
     <section className="sessao-promocoes">
       <div className="container">
@@ -128,7 +136,7 @@ export default function Promocoes() {
             <div className="form-group row padding-form">
               <div className="terms">
                 <label>
-                  Eu li e concordo com os <a href="http://">termos de uso.</a>
+                  Eu li e concordo com a <a onClick={(acessaPolitica)} className="link-politica-termos">política de privacidade</a> e <a onClick={(acessaTermos)} className="link-politica-termos">termos de uso.</a>
                   <input
                     {...register("checkbox")}
                     value={dados.checkbox}

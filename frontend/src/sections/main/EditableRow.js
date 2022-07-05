@@ -7,19 +7,19 @@ export default function EditableRow({editFormData, handleEditFormChange, handleE
   return (
     <tr>
       <td>
-        <input type="text" required="required" placeholder="id" name="id" value={editFormData.id} disabled />
+        <input type="text" className="text-center" required="required" placeholder="id" name="id" value={editFormData.id} disabled />
       </td>
       <td>
-        <input type="text" required="required" placeholder="nome" name="nome" value={editFormData.nome} onChange={handleEditFormChange}/>
+        <input type="text" className="text-center" required="required" placeholder="nome" name="nome" value={editFormData.nome} onChange={handleEditFormChange}/>
       </td>
       <td>
-        <input type="text" required="required" placeholder="telefone" name="telefone" value={editFormData.telefone} onChange={handleEditFormChange}/>
+        <input type="text" className="text-center" required="required" placeholder="telefone" name="telefone" value={editFormData.telefone} onChange={handleEditFormChange}/>
       </td>
       <td>
-        <input type="text" required="required" placeholder="email" name="email" value={editFormData.email} onChange={handleEditFormChange}/>
+        <input type="text" className="text-center" required="required" placeholder="email" name="email" value={editFormData.email} onChange={handleEditFormChange}/>
       </td>
       <td>
-        <input type="text" required="required" placeholder="data" name="data" value={editFormData.data} disabled/>
+        <input type="text" className="text-center" required="required" placeholder="data" name="data" value={editFormData.data} disabled/>
       </td>
       <td>
         <Link to={{pathname: `/home/clientes/${editFormData.id}`}} onClick={(event) => handleEditFormSubmit(event)}><FaRegSave /></Link>
