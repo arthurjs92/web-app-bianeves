@@ -5,7 +5,7 @@ function BotaoFlutuante() {
   return (
     <div className="whats">
       <a
-        href="https://wa.me/5534999143153?text=Desejo%20fazer%20um%20orçamento"
+        href="https://wa.me/5534999143153?text=Olá,%20desejo%20fazer%20um%20orçamento"
         target="_blank" rel="noopener"
       >
         <img

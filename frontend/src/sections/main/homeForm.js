@@ -2,7 +2,7 @@ import React, { useState, useEffect, Fragment } from "react";
 import * as api from "../../services/Endpoints";
 import FileDownload from "js-file-download";
 import Logo from "../../img/imagens-header/logo-principal.png";
-import FooterHome from "../footer/footerHome";
+import FooterHome from "../footer/FooterHome";
 import ReadOnlyRow from "./ReadOnlyRow";
 import EditableRow from "./EditableRow";
 

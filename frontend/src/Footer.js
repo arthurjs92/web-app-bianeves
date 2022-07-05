@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/style.css';
-import Contatos from './sections/footer/contatos';
+import Contatos from './sections/footer/Contatos';
 
 function Footer() {
     return (

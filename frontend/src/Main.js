@@ -1,9 +1,9 @@
 import React from 'react';
-import Transver from './sections/main/secao-transver';
-import Sobre from './sections/main/secao-sobre';
-import Produtos from './sections/main/secao-produtos';
-import Promocoes from './sections/main/secao-promocoes';
-import BotaoFlutuante from './sections/main/botao-flutuante';
+import Transver from './sections/main/SecaoTransver';
+import Sobre from './sections/main/SecaoSobre';
+import Produtos from './sections/main/SecaoProdutos';
+import Promocoes from './sections/main/SecaoPromocoes';
+import BotaoFlutuante from './sections/main/BotaoFlutuante';
 
 function Main() {
     return (

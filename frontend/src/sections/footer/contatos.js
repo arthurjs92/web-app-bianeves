@@ -31,7 +31,7 @@ function Contatos() {
                 </a>
               </div>
               <div className="col-md-d col-lg-4 ">
-                <a href="https://wa.me/5534999143153?text=Desejo%20fazer%20um%20orçamento" target="_blank">
+                <a href="https://wa.me/5534999143153?text=Olá,%20desejo%20fazer%20um%20orçamento" target="_blank">
                   <img src={WhatsAppImg} className="img-fluid" />
                 </a>
               </div>

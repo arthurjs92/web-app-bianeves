@@ -54,7 +54,6 @@ export default function Promocoes() {
   };
 
   const onSubmit = (data) => {
-    console.log(data);
     api
       .create(dados)
       .then((response) => {
