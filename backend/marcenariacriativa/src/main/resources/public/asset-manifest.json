@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cd2735ae.css",
-    "main.js": "/static/js/main.843b87b8.js",
+    "main.css": "/static/css/main.b3c8d51f.css",
+    "main.js": "/static/js/main.08a4df08.js",
     "static/media/produtos.jpeg": "/static/media/produtos.71945ac3daedd0269384.jpeg",
     "static/media/produto4.png": "/static/media/produto4.17e35842b71397099e53.png",
     "static/media/produto6.png": "/static/media/produto6.170cafa85e156cd2f97d.png",
@@ -18,11 +18,11 @@
     "static/media/logo-bia-3.png": "/static/media/logo-bia-3.59f4ad281ac5d42f74a8.png",
     "static/media/logo-principal.png": "/static/media/logo-principal.b019006b030e350a54b0.png",
     "index.html": "/index.html",
-    "main.cd2735ae.css.map": "/static/css/main.cd2735ae.css.map",
-    "main.843b87b8.js.map": "/static/js/main.843b87b8.js.map"
+    "main.b3c8d51f.css.map": "/static/css/main.b3c8d51f.css.map",
+    "main.08a4df08.js.map": "/static/js/main.08a4df08.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd2735ae.css",
-    "static/js/main.843b87b8.js"
+    "static/css/main.b3c8d51f.css",
+    "static/js/main.08a4df08.js"
   ]
 }

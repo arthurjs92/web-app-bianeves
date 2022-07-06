@@ -329,7 +329,7 @@ label input:checked ~ span {
   padding: 25px !important;
   margin-top: 60px !important;
   text-align: center;
-  position: relative;
+  position: absolute;
   bottom:0;
   width: 100%;
 }

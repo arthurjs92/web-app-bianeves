@@ -145,7 +145,7 @@ export default function HomeForm() {
           </div>
         </div>
       ) : (
-        <div className="container">   
+        <div className="container tabela-clientes">   
           <div className="text-center col-sm-8 col-md-8 col-lg-4 col-xl-4">
             <img
               src={Logo}

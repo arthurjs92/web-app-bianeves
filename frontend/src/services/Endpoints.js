@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const httpClient = axios.create({
-  baseURL: "https://bianeves1.uh-app.com.br",
+  baseURL: "https://bianeves.com",
   headers: {
     "Content-type": "application/json",
   },
