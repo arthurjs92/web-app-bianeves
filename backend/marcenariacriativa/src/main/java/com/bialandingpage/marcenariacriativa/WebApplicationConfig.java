@@ -17,6 +17,7 @@ public class WebApplicationConfig implements WebMvcConfigurer {
         registry.addViewController("/politica-de-privacidade").setViewName("forward:/index.html");
         registry.addViewController("/termos-de-uso").setViewName("forward:/index.html");
         registry.addViewController("/home").setViewName("forward:/index.html");
+        registry.addViewController("/thankyou").setViewName("forward:/index.html");
     }
 
 
