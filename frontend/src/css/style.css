@@ -292,6 +292,12 @@ label input:checked ~ span {
   box-shadow: none !important;
 }
 
+.btn:active {
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  transform: translateY(4px);
+  opacity: 20% !important;
+}
+
 .terms {
   font-size: 18px;
 }
@@ -323,7 +329,7 @@ label input:checked ~ span {
   padding: 25px !important;
   margin-top: 60px !important;
   text-align: center;
-  position: fixed;
+  position: relative;
   bottom:0;
   width: 100%;
 }
@@ -331,6 +337,7 @@ label input:checked ~ span {
 .footer-home p {
   margin: 0px !important;
 }
+
 
 /*Formatacao - Política de Privacidade e Termos de Uso*/
 
@@ -423,8 +430,13 @@ label input:checked ~ span {
   color: #404040 !important;
 }
 
+.tabela-clientes {
+  height: 100vh;
+}
+
+
 /* .search-bar{
-  width: 50px !important;
+  width: 400px !important;
 } */
 
 /*Formatacao - TELA UPDATE (Acesso Bia)*/

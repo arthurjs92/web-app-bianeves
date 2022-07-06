@@ -150,7 +150,7 @@ export default function Promocoes() {
               </div>
             </div>
             <div className="text-center">
-              <input type="submit" className="form-group form-btn btn" />
+              <input type="submit" className="form-group form-btn btn btn-group-toggle" />
             </div>
           </form>
         </div>

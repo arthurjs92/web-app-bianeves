@@ -114,10 +114,10 @@ export default function HomeForm() {
               alt=""
             />
           </div>
-          <div className="input-group p-3">
+          <div className="input-group p-3 search-bar">
             <input
               type="search"
-              className="form-control rounded search-bar col-xs-12 col-sm-12 col-md-12 col-lg-12"
+              className="form-control rounded col-xs-12 col-sm-12 col-md-12 col-lg-12"
               placeholder="Digite um nome"
               aria-label="Buscar"
               aria-describedby="search-addon"
