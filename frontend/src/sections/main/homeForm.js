@@ -40,6 +40,11 @@ export default function HomeForm() {
 
     api.update(editedDataId.id, editedDataId);
 
+    const newData = [...data];
+    const index = data.findIndex((data) => data.id === editDatatId);
+    newData[index] = editedDataId;
+    setData(newData);
+
     setEditDatatId(null);
   };
 
