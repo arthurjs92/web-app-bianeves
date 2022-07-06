@@ -29,7 +29,7 @@ export default function HomeForm() {
 
   const handleEditFormSubmit = (event) => {
     event.preventDefault();
-
+    
     const editedDataId = {
       id: editDatatId,
       nome: editFormData.nome,
@@ -37,8 +37,6 @@ export default function HomeForm() {
       email: editFormData.email,
       data: editFormData.data,
     };
-
-    console.log(editedDataId);
 
     api.update(editedDataId.id, editedDataId);
 
@@ -123,19 +121,21 @@ export default function HomeForm() {
               disabled
             />
           </div>
-          <table className="container table col-xs-4 col-sm-4 col-md-8 col-lg-12 mt-5">
-            <thead className="thead-dark">
-              <tr className="text-center">
-                <th scope="col">Cliente</th>
-                <th scope="col">Nome</th>
-                <th scope="col">Telefone</th>
-                <th scope="col">E-mail</th>
-                <th scope="col">Cadastro</th>
-                <th scope="col">Ação</th>
-              </tr>
-            </thead>
-          </table>
-          <div className="text-center">
+          <form className="table-responsive">
+            <table className="table col-xs-4 col-sm-4 col-md-8 col-lg-12 mt-5">
+              <thead className="thead-dark">
+                <tr className="text-center">
+                  <th scope="col">Cliente</th>
+                  <th scope="col">Nome</th>
+                  <th scope="col">Telefone</th>
+                  <th scope="col">E-mail</th>
+                  <th scope="col">Cadastro</th>
+                  <th scope="col">Ação</th>
+                </tr>
+              </thead>
+            </table>
+          </form>
+          <div className="container text-center">
             <h5>Sem clientes cadastrados no momento.</h5>
           </div>
         </div>
