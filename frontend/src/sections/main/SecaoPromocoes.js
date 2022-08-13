@@ -11,18 +11,18 @@ const formValidation = yup
   .object({
     nome: yup
       .string()
-      .min(2, "Nome inválido.")
-      .max(50, "Nome inválido.")
+      .min(2, "Nome obrigatório.")
+      .max(50, "Nome obrigatório.")
       .required("O campo é obrigatório."),
     telefone: yup
       .string()
-      .min(11, "Telefone inválido.")
-      .max(15, "Telefone inválido.")
-      .matches(telefoneRegex, "Telefone inválido.")
+      .min(11, "Telefone obrigatório.")
+      .max(15, "Telefone obrigatório.")
+      .matches(telefoneRegex, "Telefone obrigatório.")
       .required("O campo é obrigatório."),
     email: yup
       .string()
-      .email("E-mail inválido.")
+      .email("E-mail obrigatório.")
       .required("O campo é obrigatório."),
     checkbox: yup
       .boolean()
@@ -105,7 +105,7 @@ export default function Promocoes() {
                   onChange={trataCampo}
                   className="form-control"
                 />
-                <p>{errors.nome?.message}</p>
+                <p className="errors">{errors.nome?.message}</p>
               </div>
             </div>
             <div className="form-group row padding-form">
@@ -117,7 +117,7 @@ export default function Promocoes() {
                   onChange={trataCampo}
                   className="form-control"
                 />
-                <p>{errors.telefone?.message}</p>
+                <p className="errors">{errors.telefone?.message}</p>
               </div>
             </div>
             <div className="form-group row padding-form">
@@ -129,7 +129,7 @@ export default function Promocoes() {
                   onChange={trataCampo}
                   className="form-control"
                 />
-                <p>{errors.email?.message}</p>
+                <p className="errors">{errors.email?.message}</p>
               </div>
             </div>
             <div className="form-group row padding-form">
@@ -145,7 +145,7 @@ export default function Promocoes() {
                     type="checkbox"
                   />
                   <span></span>
-                  <p>{errors.checkbox?.message}</p>
+                  <p className="errors">{errors.checkbox?.message}</p>
                 </label>
               </div>
             </div>
