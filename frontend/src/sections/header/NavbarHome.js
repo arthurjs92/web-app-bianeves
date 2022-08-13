@@ -4,7 +4,6 @@ import Login from "../../Login";
 const NavbarHome = ({ logged, setLogged }) => {
 
   const logout = () => {
-    console.log("saindo ....");
     localStorage.removeItem("jwtToken");
     setLogged(false);
   };

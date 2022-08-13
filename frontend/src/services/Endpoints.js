@@ -1,10 +1,15 @@
 import axios from "axios";
+// import https from "https";
 
 const httpClient = axios.create({
-  baseURL: "https://bianeves.com",
+  baseURL: "http://localhost:8080",
   headers: {
     "Content-type": "application/json",
   },
+
+  // httpsAgent: new https.Agent({  
+  //   rejectUnauthorized: false
+  // })
 });
 
 export const getAll = () => {

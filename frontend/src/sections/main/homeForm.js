@@ -209,7 +209,7 @@ export default function HomeForm() {
           </div>
         </div> 
         )}
-      <FooterHome />
+      {/* <FooterHome /> */}
     </div>
   );
 }
