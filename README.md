@@ -16,11 +16,11 @@ Todas as imagens e vídeo são de propriedade de Bianca Neves e não devem ser u
 
 ### Inicialização e instalação do projeto
 
-Para iniciar o Back-End, abra-o com a IDE de sua preferência com as tecnologias utilizadas logo abaixo. Inicie o back-end pela IDE ou atraves do comando: mvnw spring-boot:run. Com o Back-End em execução abra a pasta do Front-End com vs-code e execute o comando npn install, esse comando vai baixar tudo que o projeto precisa para ser executado (para visualizar, olhe o arquivo [package.json]). Quando terminar o download execute o comando npn start, para iniciar o Front-End. Com o Back-End e o Front-End em execução, acesse as URI abaixo para ter acesso ao localhost.
+Para iniciar o Back-End, abra-o com a IDE de sua preferência com as tecnologias utilizadas logo abaixo. Inicie o back-end pela IDE ou atraves do comando: mvnw spring-boot:run. Com o Back-End em execução abra a pasta do Front-End com vs-code e execute o comando npn install, esse comando vai baixar tudo que o projeto precisa para ser executado (para visualizar, olhe o arquivo [package.json](https://github.com/arthurjs92/web-app-bianeves/blob/main/frontend/package.json)). Quando terminar o download execute o comando npn start, para iniciar o Front-End. Com o Back-End e o Front-End em execução, acesse as URI abaixo para ter acesso ao localhost.
 
-### Back-End: http://localhost:8080/
+Back-End: http://localhost:8080/
 
-### Front-End: http://localhost:3000/
+Front-End: http://localhost:3000/
 
 ## Tecnologias utilizadas:
 
