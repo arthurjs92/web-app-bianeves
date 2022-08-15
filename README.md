@@ -22,6 +22,10 @@ Back-End: http://localhost:8080/
 
 Front-End: http://localhost:3000/
 
+Link do Swagger para acessar a documentação com todos os endpoints:
+
+http://localhost:8080/swagger-ui.html
+
 ## Tecnologias utilizadas:
 
 - Front-End:
