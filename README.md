@@ -14,7 +14,7 @@ O desenvolvimento (programação) e visual (design das telas) é de nossa autori
 
 Todas as imagens e vídeo são de propriedade de Bianca Neves e não devem ser utilizados. Quanto aos ícones, os mesmos foram retirados do repositório gratuitos [flaticon](https://www.flaticon.com/br/).
 
-### Inicialização e instalação do projeto
+### Instalação e inicialização do projeto
 
 Para iniciar o Back-End, abra-o com a IDE de sua preferência com as tecnologias utilizadas logo abaixo. Inicie o back-end pela IDE ou atraves do comando: mvnw spring-boot:run. Com o Back-End em execução abra a pasta do Front-End com vs-code e execute o comando npn install, esse comando vai baixar tudo que o projeto precisa para ser executado (para visualizar, olhe o arquivo [package.json](https://github.com/arthurjs92/web-app-bianeves/blob/main/frontend/package.json)). Quando terminar o download execute o comando npn start, para iniciar o Front-End. Com o Back-End e o Front-End em execução, acesse as URI abaixo para ter acesso ao localhost.
 
@@ -83,10 +83,10 @@ Na página de admin além de realizar operações de `CRUD`, é possível export
 
 ## Autores
 
-Patrícia Magalhães Sotero Rocha
-
-[![Linkedin](repo-assets/linkedin.svg)](https://www.linkedin.com/in/patr%C3%ADcia-sotero-71a803170/)
-
 Arthur José dos Santos
 
 [![Linkedin](repo-assets/linkedin.svg)](https://www.linkedin.com/in/arthurjs92/)
+
+Patrícia Magalhães Sotero Rocha
+
+[![Linkedin](repo-assets/linkedin.svg)](https://www.linkedin.com/in/patr%C3%ADcia-sotero-71a803170/)
