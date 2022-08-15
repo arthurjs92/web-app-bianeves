@@ -41,7 +41,7 @@ Front-End: http://localhost:3000/
     * Spring Validation
     * Spring Data JPA
     * Spring Security com token JWT
-    * Lombok
+    * Lombok para produtividade e redução de código
     * Gerenciamento de projeto com Maven
     * Banco de dados MySQL
     * Documentação com Swagger
