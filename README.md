@@ -60,7 +60,7 @@ Após o preenchimento do formulário contido na Landing Page o usuário é direc
 ![Tela inicial](repo-assets/thankyou-page.png)
 
 
-## Layout - Página Admin
+## Layout - Admin Page
 
 Na página de admin além de realizar operações de `CRUD`, é possível exportar os dados dos clientes cadastrados em formato CSV para `Excel`.
 ### Web e Mobile - Login:
@@ -68,7 +68,6 @@ Na página de admin além de realizar operações de `CRUD`, é possível export
 
 ### Web e Mobile - Home:
 ![Telas home](repo-assets/admin-home.png)
-
 
 
 ## Autores
