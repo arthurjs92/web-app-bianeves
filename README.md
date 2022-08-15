@@ -14,27 +14,38 @@ O desenvolvimento (programação) e visual (design das telas) é de nossa autori
 
 Todas as imagens e vídeo são de propriedade de Bianca Neves e não devem ser utilizados. Quanto aos ícones, os mesmos foram retirados do repositório gratuitos [flaticon](https://www.flaticon.com/br/).
 
+### Inicialização e instalação do projeto
+
+Para iniciar o Back-End, abra-o com a IDE de sua preferência com as tecnologias utilizadas logo abaixo. Inicie o back-end pela IDE ou atraves do comando: mvnw spring-boot:run. Com o Back-End em execução abra a pasta do Front-End com vs-code e execute o comando npn install, esse comando vai baixar tudo que o projeto precisa para ser executado (para visualizar, olhe o arquivo [package.json]). Quando terminar o download execute o comando npn start, para iniciar o Front-End. Com o Back-End e o Front-End em execução, acesse as URI abaixo para ter acesso ao localhost.
+
+## Back-End: http://localhost:8080/
+
+## Front-End: http://localhost:3000/
 
 ## Tecnologias utilizadas:
 
 - Front-End:
-    * HTML5
-    * CSS3
-    * Bootstrap
-    * JavaScript
-    * React
-    * Node
-    * Axios
+    * HTML5 para a publicação
+    * CSS3 para estilização
+    * Bootstrap para responsividade
+    * JavaScript com react-hook-form
+    * React para criar a interface
+    * Node para compilar e executar
+    * Axios para criar requisições HTTP
+    * Validação do formulário com Yup
+    * Icones utilizados da biblioteca react-icons
+    * js-file-download para salvar os dados em um arquivo como download
 
 - Back-End:
-    * Java
-    * SpringBoot
-    * Maven
-    * JPA
-    * MySQL
+    * Java com Spring Boot
+    * Spring Validation
+    * Spring Data JPA
+    * Spring Security com token JWT
     * Lombok
-    * JWT
-    * Swagger
+    * Gerenciamento de projeto com Maven
+    * Banco de dados MySQL
+    * Documentação com Swagger
+    * Postman
 
 - Hospedagem:
     * AWS
