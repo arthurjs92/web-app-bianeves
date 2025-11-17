@@ -2,6 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://arthurjs92.github.io/web-app-bianeves",
   "dependencies": {
     "@hookform/resolvers": "^2.9.3",
     "@testing-library/jest-dom": "^5.16.4",
