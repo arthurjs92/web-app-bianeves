@@ -2,7 +2,7 @@ import React, { useState, useEffect, Fragment } from "react";
 import * as api from "../../services/Endpoints";
 import FileDownload from "js-file-download";
 import Logo from "../../img/imagens-header/logo-principal.png";
-import FooterHome from "../footer/FooterHome"
+import FooterHome from "../footer/FooterHome";
 import ReadOnlyRow from "./ReadOnlyRow";
 import EditableRow from "./EditableRow";
 
@@ -111,7 +111,7 @@ export default function HomeForm() {
             <img
               src={Logo}
               className="img-responsive img-fluid d-block w-50"
-              alt=""
+              alt="Logo Bia Neves Marcenaria"
             />
           </div>
           <div className="input-group p-3 search-bar">
@@ -150,7 +150,7 @@ export default function HomeForm() {
             <img
               src={Logo}
               className="img-responsive img-fluid d-block w-50"
-              alt="logo-bia-neves"
+              alt="Logo Bia Neves Marcenaria"
             />
           </div>
           <div className="input-group p-3">
@@ -164,7 +164,7 @@ export default function HomeForm() {
               name="nome"
             />
           </div>
-          <form  className="table-responsive" onSubmit={handleEditFormSubmit}>
+          <form className="table-responsive" onSubmit={handleEditFormSubmit}>
             <table className="table col-xs-4 col-sm-4 col-md-8 col-lg-12 mt-5">
               <thead className="thead-dark">
                 <tr className="text-center">
@@ -180,7 +180,7 @@ export default function HomeForm() {
                 {data.map((data, key) => {
                   if (data.nome.includes(searchValue)) {
                     return (
-                      <Fragment>
+                      <Fragment key={data.id}>
                         {editDatatId === data.id ? (
                           <EditableRow
                             editFormData={editFormData}
@@ -198,6 +198,7 @@ export default function HomeForm() {
                       </Fragment>
                     );
                   }
+                  return null; // ← CORREÇÃO DO WARNING DO MAP
                 })}
               </tbody>
             </table>
@@ -208,7 +209,7 @@ export default function HomeForm() {
             </button>
           </div>
         </div> 
-        )}
+      )}
       <FooterHome />
     </div>
   );

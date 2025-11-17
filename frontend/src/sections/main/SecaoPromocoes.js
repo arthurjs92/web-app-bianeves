@@ -5,7 +5,7 @@ import * as yup from "yup";
 import * as api from "../../services/Endpoints";
 import logoarc from "../../img/imagens-main/logo-formulario1.png";
 
-const telefoneRegex = /^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$/gm;
+const telefoneRegex = /^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}-?[0-9]{4}$/gm;
 
 const formValidation = yup
   .object({
@@ -66,12 +66,12 @@ export default function Promocoes() {
   };
 
   const acessaPolitica = () => {
-    window.open("/politica-de-privacidade","_blank");
-  }
+    window.open("/politica-de-privacidade", "_blank", "noopener,noreferrer");
+  };
 
   const acessaTermos = () => {
-    window.open("/termos-de-uso","_blank");
-  }
+    window.open("/termos-de-uso", "_blank", "noopener,noreferrer");
+  };
 
   return (
     <section className="sessao-promocoes">
@@ -88,7 +88,7 @@ export default function Promocoes() {
       </div>
       <div className="d-flex justify-content-center flex-row align-items-start flex-wrap-reverse bg-color col-sm-10 col-md-10 col-lg-8 ">
         <div className="flex-column col-md-6 col-lg-6 ">
-          <img src={logoarc} className="form-img img-fluid d-block" alt="" />
+          <img src={logoarc} className="form-img img-fluid d-block" alt="Logo Bia Neves" />
         </div>
 
         <div className="flex-column col-md-6 col-lg-6 ">
@@ -135,7 +135,22 @@ export default function Promocoes() {
             <div className="form-group row padding-form">
               <div className="terms">
                 <label>
-                  Eu li e concordo com a <a onClick={(acessaPolitica)} className="link-politica-termos">política de privacidade</a> e <a onClick={(acessaTermos)} className="link-politica-termos">termos de uso.</a>
+                  Eu li e concordo com a{" "}
+                  <button 
+                    type="button" 
+                    onClick={acessaPolitica} 
+                    className="link-politica-termos btn-link"
+                  >
+                    política de privacidade
+                  </button>{" "}
+                  e{" "}
+                  <button 
+                    type="button" 
+                    onClick={acessaTermos} 
+                    className="link-politica-termos btn-link"
+                  >
+                    termos de uso.
+                  </button>
                   <input
                     {...register("checkbox")}
                     value={dados.checkbox}

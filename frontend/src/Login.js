@@ -1,6 +1,6 @@
 import "./css/style.css";
 import Logo from "./img/imagens-header/logo-principal.png";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import * as api from "../src/services/Endpoints";
 
 const Login = ({ setLogged }) => {

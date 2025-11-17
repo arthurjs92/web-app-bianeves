@@ -22,17 +22,25 @@ function Contatos() {
             <div className="collum ml-5 d-flex align-items-md-center">
               <div className="col-md-d col-lg-4 ">
                 <a href="mailto:biancapneves@gmail.com">
-                  <img src={GmailImg} className="img-fluid" />
+                  <img src={GmailImg} className="img-fluid" alt="Ícone do Gmail" />
                 </a>
               </div>
               <div className="col-md-d col-lg-4 ">
-                <a href="https://instagram.com/bia.pneves?igshid=YmMyMTA2M2Y=" target="_blank">
-                  <img src={IgImg} className="img-fluid" />
+                <a 
+                  href="https://instagram.com/bia.pneves?igshid=YmMyMTA2M2Y=" 
+                  target="_blank" 
+                  rel="noreferrer"
+                >
+                  <img src={IgImg} className="img-fluid" alt="Ícone do Instagram" />
                 </a>
               </div>
               <div className="col-md-d col-lg-4 ">
-                <a href="https://wa.me/5534999143153?text=Olá,%20desejo%20fazer%20um%20orçamento" target="_blank">
-                  <img src={WhatsAppImg} className="img-fluid" />
+                <a 
+                  href="https://wa.me/5534999143153?text=Olá,%20desejo%20fazer%20um%20orçamento" 
+                  target="_blank" 
+                  rel="noreferrer"
+                >
+                  <img src={WhatsAppImg} className="img-fluid" alt="Ícone do WhatsApp" />
                 </a>
               </div>
             </div>
@@ -49,7 +57,7 @@ function Contatos() {
             </p>
           </div>
           <div className="col-md-4 col-lg-3 mx-auto mt-3">
-            <img src={LogoFooter} className="img-fluid d-block" />
+            <img src={LogoFooter} className="img-fluid d-block" alt="Logo Bia Neves Marcenaria" />
           </div>
           <hr className="text-light mb-4" />
           <div className="col-md-7 col-lg-8">
