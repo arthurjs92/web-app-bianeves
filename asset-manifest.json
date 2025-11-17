@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/web-app-bianeves/static/css/main.7179684b.css",
+    "main.js": "/web-app-bianeves/static/js/main.67881cf9.js",
+    "static/media/produtos.jpeg": "/web-app-bianeves/static/media/produtos.71945ac3daedd0269384.jpeg",
+    "static/media/produto4.png": "/web-app-bianeves/static/media/produto4.17e35842b71397099e53.png",
+    "static/media/produto6.png": "/web-app-bianeves/static/media/produto6.170cafa85e156cd2f97d.png",
+    "static/media/imagem-principal.jpeg": "/web-app-bianeves/static/media/imagem-principal.879f577a1cd52344b253.jpeg",
+    "static/media/bia.jpeg": "/web-app-bianeves/static/media/bia.860515dde1611675b3bf.jpeg",
+    "static/media/produto2.jpg": "/web-app-bianeves/static/media/produto2.890ae6716416437d0f61.jpg",
+    "static/media/produto8.jpg": "/web-app-bianeves/static/media/produto8.dc8e002684698e70e004.jpg",
+    "static/media/produto5.jpg": "/web-app-bianeves/static/media/produto5.95508ea323a73f4ef2a5.jpg",
+    "static/media/produto3.jpeg": "/web-app-bianeves/static/media/produto3.eea3bda9900949b98229.jpeg",
+    "static/media/produto7.jpg": "/web-app-bianeves/static/media/produto7.6e28e2e96b69332d3bb5.jpg",
+    "static/media/produto1.jpg": "/web-app-bianeves/static/media/produto1.e4e7f7c41ac3b1d075f5.jpg",
+    "static/media/logo-formulario1.png": "/web-app-bianeves/static/media/logo-formulario1.70abc7a24a4ed04c13f7.png",
+    "static/media/logo-footer.png": "/web-app-bianeves/static/media/logo-footer.1dc719712c88cfaf1b78.png",
+    "static/media/logo-bia-3.png": "/web-app-bianeves/static/media/logo-bia-3.59f4ad281ac5d42f74a8.png",
+    "static/media/logo-principal.png": "/web-app-bianeves/static/media/logo-principal.b019006b030e350a54b0.png",
+    "index.html": "/web-app-bianeves/index.html",
+    "main.7179684b.css.map": "/web-app-bianeves/static/css/main.7179684b.css.map",
+    "main.67881cf9.js.map": "/web-app-bianeves/static/js/main.67881cf9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7179684b.css",
+    "static/js/main.67881cf9.js"
+  ]
+}
